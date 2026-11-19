@@ -116,8 +116,8 @@ const Navbar = () => {
                 aria-label={mobileMenuOpen ? 'Close menu' : 'Open menu'}
                 aria-expanded={mobileMenuOpen}
               >
-                <span aria-hidden="true" className={`absolute left-1/2 top-1/2 h-px w-[18px] -translate-x-1/2 bg-current transition-transform duration-[400ms] ease-[cubic-bezier(0.22,1,0.36,1)] motion-reduce:transition-none ${mobileMenuOpen ? 'translate-y-0 rotate-45' : '-translate-y-1'}`} />
-                <span aria-hidden="true" className={`absolute left-1/2 top-1/2 h-px w-[18px] -translate-x-1/2 bg-current transition-transform duration-[400ms] ease-[cubic-bezier(0.22,1,0.36,1)] motion-reduce:transition-none ${mobileMenuOpen ? 'translate-y-0 -rotate-45' : 'translate-y-1'}`} />
+                <span aria-hidden="true" className={`absolute left-1/2 top-1/2 h-px w-[18px] -translate-x-1/2 bg-current transition-transform duration-[500ms] ease-[cubic-bezier(0.22,1,0.36,1)] motion-reduce:transition-none ${mobileMenuOpen ? 'translate-y-0 rotate-45' : '-translate-y-1'}`} />
+                <span aria-hidden="true" className={`absolute left-1/2 top-1/2 h-px w-[18px] -translate-x-1/2 bg-current transition-transform duration-[500ms] ease-[cubic-bezier(0.22,1,0.36,1)] motion-reduce:transition-none ${mobileMenuOpen ? 'translate-y-0 -rotate-45' : 'translate-y-1'}`} />
               </button>
             </>
           ) : (
