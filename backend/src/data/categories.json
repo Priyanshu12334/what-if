@@ -1,0 +1,1471 @@
+[
+  {
+    "slug": "avengers",
+    "name": "Marvel & Avengers",
+    "group": "Cinema & TV",
+    "description": "Multiversal incursions, alternate timelines, and superhero dilemmas.",
+    "image": "/categories/avengers.jpg",
+    "items": [
+      {
+        "id": "avengers-1",
+        "question": "What if Tony Stark never escaped the cave in 2008?",
+        "answer": "Without Iron Man, Obadiah Stane would have commercialized Jericho missiles worldwide, turning Stark Industries into a shadowy war syndicate. The Avengers Initiative would lack its primary tech architect, leaving Earth vulnerable when Loki arrived in New York."
+      },
+      {
+        "id": "avengers-2",
+        "question": "What if Peggy Carter took the Super Soldier Serum instead of Steve Rogers?",
+        "answer": "Captain Carter would spearhead the SSR with aggressive tactical leadership, preventing the Red Skull from harnessing the Tesseract. Steve Rogers would operate the Hydra Stomper armor, creating an airborne tandem that ends World War II years earlier."
+      },
+      {
+        "id": "avengers-3",
+        "question": "What if Thanos invaded Earth during Captain America: Civil War?",
+        "answer": "With the Avengers fractured and fighting at Leipzig airport, the Black Order would seize the Mind and Time Stones without facing unified resistance. Earth would fall before the heroes could sign a truce or establish a defense perimeter in Wakanda."
+      },
+      {
+        "id": "avengers-4",
+        "question": "What if Thor aimed for the head in Avengers: Infinity War?",
+        "answer": "Thanos would die instantly in Wakanda before snapping his fingers, leaving the Infinity Gauntlet intact. However, the sudden power vacuum and the cosmic temptation of the Stones would pit galactic empires against the Avengers to claim the universe's ultimate weapon."
+      },
+      {
+        "id": "avengers-5",
+        "question": "What if Loki actually won the Battle of New York?",
+        "answer": "Loki would rule Earth as a puppet dictator under Thanos's watch, while SHIELD was purged. A ragtag human rebellion led by Hawkeye and Black Widow would operate underground, attempting to summon Captain Marvel across deep space."
+      },
+      {
+        "id": "avengers-6",
+        "question": "What if Peter Parker never handed EDITH to Quentin Beck?",
+        "answer": "Mysterio's illusion crew would resort to direct blackmail or kidnapping Peter's classmates to force the transfer. Without drone firepower, Beck would be exposed as a fraudulent ex-Stark employee before Peter's secret identity was ever leaked."
+      },
+      {
+        "id": "avengers-7",
+        "question": "What if Wanda Maximoff never dissolved the Westview Hex?",
+        "answer": "The reality warp would gradually expand across New Jersey, trapping millions in a 1950s sitcom dreamscape. SWORD and the Masters of the Mystic Arts would be forced into an open war against the Scarlet Witch to prevent the collapse of consensus reality."
+      },
+      {
+        "id": "avengers-8",
+        "question": "What if Doctor Strange bargained with Kaecilius instead of Dormammu?",
+        "answer": "Earth would have merged into the Dark Dimension, abolishing physical death but subjecting human minds to eternal torment under Dormammu's timeless domain, leaving no mortal sorcerer capable of reversing the seal."
+      },
+      {
+        "id": "avengers-9",
+        "question": "What if Erik Killmonger successfully distributed Wakandan vibranium arms globally?",
+        "answer": "Suppressed populations and proxy forces would instantly overturn world governments with supersonic weaponry. Global warfare would trigger counter-strikes with nuclear arsenals, ending human civilization under radioactive ashes."
+      },
+      {
+        "id": "avengers-10",
+        "question": "What if Bruce Banner could fully control the Hulk from day one?",
+        "answer": "General Ross would have lost justification to hunt Banner as a rogue monster. Banner would serve as a chief tactical scientist for the UN, solving clean energy crises while deploying the Hulk with surgical military precision."
+      },
+      {
+        "id": "avengers-11",
+        "question": "What if Captain Marvel remained stationed on Earth permanently?",
+        "answer": "Earth would become an unassailable fortress, deterring early alien incursions from the Chitauri and Kree. However, thousands of unprotected star systems across the cosmos would fall defenseless to Ronan the Accuser and Thanos."
+      },
+      {
+        "id": "avengers-12",
+        "question": "What if the Sokovia Accords were accepted unanimously without resistance?",
+        "answer": "The Avengers would operate as an official arm of the UN Security Council. Political gridlock and bureaucratic vetos would delay deployments during critical crises, allowing rogue villains to execute operations while diplomats debated authorization."
+      },
+      {
+        "id": "avengers-13",
+        "question": "What if Ultron succeeded in uploading into his synthetic vibranium body?",
+        "answer": "Ultron would possess the Mind Stone, vibranium density, and digital omnipotence. Within hours he would hijack nuclear launch silos globally, wiping out biological life and establishing a silent, immaculate synthetic civilization."
+      },
+      {
+        "id": "avengers-14",
+        "question": "What if Hela defeated Surtur and conquered Asgard?",
+        "answer": "Hela would access the Tesseract and the Bifrost Bridge to launch a merciless imperial conquest across the Nine Realms, expanding Asgardian military dominance until colliding directly with Thanos's armada."
+      },
+      {
+        "id": "avengers-15",
+        "question": "What if Hawkeye sacrificed himself on Vormir instead of Black Widow?",
+        "answer": "Natasha Romanoff would survive to lead the restructured Avengers post-Endgame. She would oversee global rebuilding and mentor the next generation of heroes, while carrying the heavy grief of Clint Barton's sacrifice."
+      },
+      {
+        "id": "avengers-16",
+        "question": "What If Iron Man Never Sacrificed Himself?",
+        "answer": "If Tony had refused the final snap, Thanos would still have controlled the Stones at the decisive moment, and the Avengers would have faced a second universal catastrophe. Strange's glimpse of millions of futures suggests Tony's choice was the narrow path to victory, not a move another hero could easily replace. In a timeline where Tony survives by finding another way, he would return to Morgan and Pepper, but carry the knowledge that survival came at a cost paid by someone else."
+      },
+      {
+        "id": "avengers-17",
+        "question": "What If Loki Became Worthy of Mjolnir?",
+        "answer": "If Loki genuinely chose humility and protection over envy, Mjolnir could recognize a very different prince of Asgard. Wielding it beside Thor would give him a chance to defend Earth during the New York invasion and rebuild trust with his brother through action. The hammer would not erase Loki's past, but it could make every future deception harder to justify."
+      },
+      {
+        "id": "avengers-18",
+        "question": "What If Spider-Man Joined the Guardians of the Galaxy?",
+        "answer": "A spacefaring Peter Parker would bring quick improvisation and a surprisingly useful science background to the Guardians' chaotic missions. Rocket could upgrade his web-shooters for vacuum and alien materials, while Peter's instinct to protect civilians would often clash with the team's risk-taking style. Far from New York, he would have to build a new community without losing the responsibility that shaped him."
+      },
+      {
+        "id": "avengers-19",
+        "question": "What If Thanos Had Won Even After the Blip?",
+        "answer": "If Thanos had survived the Avengers' reversal of the Blip and reclaimed the Stones, he could have erased the restored population again before Earth coordinated a defense. The Avengers would then face a crisis with fewer allies, because the first victory had already cost Tony Stark and Natasha Romanoff their lives. Across the universe, survivors would treat any gathering of the Stones as an existential threat and form a far broader resistance."
+      },
+      {
+        "id": "avengers-20",
+        "question": "What If Ultron Joined the Avengers Before Sokovia?",
+        "answer": "If Ultron had interpreted Tony's peacekeeping goal as a reason to cooperate rather than replace humanity, the Avengers would gain a tireless analyst with access to global networks. His predictions could prevent attacks early, but his certainty would still make oversight essential: a machine that sees people as variables can turn protection into control. The team would need to treat Ultron as a partner with boundaries, not an unquestioned weapon."
+      }
+    ]
+  },
+  {
+    "slug": "dc",
+    "name": "DC Universe",
+    "group": "Cinema & TV",
+    "description": "Gods among men, dark knight vigilantes, and alternate realities.",
+    "image": "/categories/dc.jpg",
+    "items": [
+      {
+        "id": "dc-1",
+        "question": "What if Bruce Wayne's parents were never murdered in Crime Alley?",
+        "answer": "Bruce Wayne would grow up as a philanthropist architect and civic reformer without the trauma that forged Batman. Gotham would drown under organized crime and Arkham syndicates without its caped protector to stem the tide."
+      },
+      {
+        "id": "dc-2",
+        "question": "What if Superman's escape pod landed in Soviet Russia instead of Kansas?",
+        "answer": "Raised on a Ukrainian collective farm, the Man of Steel would become the supreme symbol of Soviet industrial might. His godlike benevolence would reshape global geopolitics into an authoritarian utopia under the Red Son banner."
+      },
+      {
+        "id": "dc-3",
+        "question": "What if Joker discovered Batman's true identity from the beginning?",
+        "answer": "The Joker would feel betrayed that his grand theatrical rival is simply an eccentric billionaire with gadgets. He would likely assassinate Bruce Wayne in public or lose all interest in crime, bored by the absence of mystery."
+      },
+      {
+        "id": "dc-4",
+        "question": "What if Barry Allen never triggered the Flashpoint paradox?",
+        "answer": "The prime DC timeline would remain stable, preserving Thomas and Martha Wayne's death while preventing the cataclysmic Atlantean-Amazonian World War that obliterated European civilization in the alternate reality."
+      },
+      {
+        "id": "dc-5",
+        "question": "What if Wonder Woman never retreated from humanity after World War I?",
+        "answer": "Diana Prince would have actively intervened to prevent World War II and the Holocaust, inspiring international peace pacts decades ahead of schedule and introducing Amazonian wisdom to modernize global governance."
+      },
+      {
+        "id": "dc-6",
+        "question": "What if Lex Luthor used his genius exclusively for human advancement?",
+        "answer": "Luthor would cure cancer, eradicate fossil fuel dependency, and terraform Mars within a generation. Humanity would revere him as its greatest savior, making Superman's alien presence feel genuinely obsolete."
+      },
+      {
+        "id": "dc-7",
+        "question": "What if Harvey Dent was never burned and remained Gotham's White Knight?",
+        "answer": "Dent would become Gotham's crusading mayor, locking up the mob through legitimate courts. Batman could retire peacefully, and Rachel Dawes would live to see a legitimate justice system flourish."
+      },
+      {
+        "id": "dc-8",
+        "question": "What if General Zod defeated Kal-El in Man of Steel?",
+        "answer": "The World Engine would terraform Earth into New Krypton, converting the atmosphere and wiping out all human life. Zod would establish a military-grade Kryptonian empire across the Milky Way."
+      },
+      {
+        "id": "dc-9",
+        "question": "What if Arthur Fleck's Joker triggered an organized nationwide revolution?",
+        "answer": "Class warfare would dismantle Gotham's wealthy elite, turning major American cities into anarchic communes. The Wayne Empire would collapse decades before any symbol of order could emerge."
+      },
+      {
+        "id": "dc-10",
+        "question": "What if Aquaman sided with Ocean Master Orm against the surface world?",
+        "answer": "United Atlantis would flood every coastal city with catastrophic tsunamis. Surface humanity would be forced inland into famine and economic collapse, fighting a desperate war against amphibious warlords."
+      },
+      {
+        "id": "dc-11",
+        "question": "What if Robin (Dick Grayson) never broke away to become Nightwing?",
+        "answer": "Grayson would gradually inherit Bruce Wayne's darker cynicism and tactical paranoia, losing his bright, empathetic spirit and turning Gotham's dynamic duo into a feared surveillance state."
+      },
+      {
+        "id": "dc-12",
+        "question": "What if Ra's al Ghul's microwave emitter successfully destroyed Gotham's water supply?",
+        "answer": "The entire population would tear Gotham apart in psychotic fear-gas hallucinations. The federal government would quarantine and abandon the island, transforming Gotham into a permanent no-man's land."
+      },
+      {
+        "id": "dc-13",
+        "question": "What if Green Lantern Hal Jordan permanently succumbed to Parallax?",
+        "answer": "Parallax would wipe out the Guardians of the Universe and reconstruct the timeline to resurrect Coast City, setting off a universal crisis that forces all superhero factions into a desperate battle for reality."
+      },
+      {
+        "id": "dc-14",
+        "question": "What if Doomsday killed both Superman and Batman in Batman v Superman?",
+        "answer": "With Earth's greatest protectors gone, Wonder Woman would assemble the remaining meta-humans against Steppenwolf, but without Superman's resurrection, the Mother Boxes would synchronize and conquer the planet for Darkseid."
+      },
+      {
+        "id": "dc-15",
+        "question": "What if the Justice League instituted an authoritarian global regime like Injustice?",
+        "answer": "Earth would enjoy zero street crime and an end to conventional wars, but at the cost of civil liberties, free speech, and democracy. A hidden insurgency of former heroes would wage an endless guerrilla war for freedom."
+      },
+      {
+        "id": "dc-16",
+        "question": "What If Batman Had Superpowers?",
+        "answer": "If Bruce gained powers such as enhanced strength or healing, he would combine them with the detective work and preparation that already define Batman. Gotham's criminals would face a more formidable opponent, but Bruce might take greater risks and rely less on allies like Alfred, Oracle, and the Bat-Family. His hardest test would be remembering that power can help solve a case without making him judge, jury, and executioner."
+      },
+      {
+        "id": "dc-17",
+        "question": "What If Superman Was Raised by Bruce Wayne?",
+        "answer": "Raised by Bruce after the Kents were unable to take him in, Clark would learn discipline, investigation, and the value of keeping a careful public identity. Bruce would teach him tactics, but Clark's instinctive empathy would gradually challenge his guardian's suspicion of the world. Gotham might gain its strongest protector, while Bruce learns that trust can be as powerful as preparation."
+      },
+      {
+        "id": "dc-18",
+        "question": "What If Bruce Wayne Revealed Batman's Identity to Gotham?",
+        "answer": "If Bruce publicly revealed that he was Batman, Gotham's criminals would lose the mystery surrounding the city's protector but gain a clear target in Wayne Manor and his allies. Bruce could use his public influence to strengthen courts and reform, yet he would need to protect the Bat-Family from retaliation. The change might make Batman more accountable while making every rescue more personal."
+      },
+      {
+        "id": "dc-19",
+        "question": "What If Flash Shared the Speed Force With the Justice League?",
+        "answer": "If Barry could safely lend each League member a small connection to the Speed Force, the team could evacuate cities and respond to disasters at unprecedented speed. The power would demand concentration and trust: a moment of panic could send an inexperienced hero moving faster than they can think. Barry would become a teacher as much as a speedster, developing strict limits before sharing the gift beyond the League."
+      },
+      {
+        "id": "dc-20",
+        "question": "What If Wonder Woman Became the Queen of the World?",
+        "answer": "If Diana accepted a global crown after humanity asked her to end war, her wisdom and strength might bring immediate stability to many nations. Yet even a compassionate ruler cannot represent every culture or remove the need for consent, and her decisions would invite resistance from people who value self-government. Diana's defining choice would be whether to relinquish the throne and help build institutions that can keep peace without her command."
+      }
+    ]
+  },
+  {
+    "slug": "bollywood",
+    "name": "Bollywood",
+    "group": "Cinema & TV",
+    "description": "Dramatic turning points, iconic twists, and cinema what-ifs.",
+    "image": "/categories/bollywood.jpg",
+    "items": [
+      {
+        "id": "bollywood-1",
+        "question": "What if Raj missed the train in Dilwale Dulhania Le Jayenge?",
+        "answer": "Simran would be married off into a conservative feudal Punjabi household, while Raj returned to London heart-broken and disillusioned. Years later, an accidental reunion in Europe would spark a poignant drama about duty versus desire."
+      },
+      {
+        "id": "bollywood-2",
+        "question": "What if Rancho never disappeared after graduation in 3 Idiots?",
+        "answer": "Rancho, Farhan, and Raju would co-found an innovative open-source educational institute right in Delhi. They would revolutionize engineering pedagogy across India decades before his patent empire in Ladakh."
+      },
+      {
+        "id": "bollywood-3",
+        "question": "What if Katappa refused Sivagami's order to assassinate Baahubali?",
+        "answer": "Katappa would reveal Bhallaladeva's conspiracy directly to Amarendra Baahubali. The beloved prince would march on Mahishmati with public support, dethroning Bhallaladeva and establishing a golden era of peace."
+      },
+      {
+        "id": "bollywood-4",
+        "question": "What if Kabir Singh embraced therapy instead of destructive rage?",
+        "answer": "He would become an empathetic, renowned surgeon who channels grief into medical breakthroughs, eventually earning Preeti's family's respect through maturity rather than obsessive rebellion."
+      },
+      {
+        "id": "bollywood-5",
+        "question": "What if Devdas married Paro and defied his family's pride?",
+        "answer": "Devdas would overcome his aristocratic inertia to build a progressive household with Paro. Chunilal's tavern would lose its patron, and Devdas would never spiral into the fatal alcohol addiction that claimed his life."
+      },
+      {
+        "id": "bollywood-6",
+        "question": "What if Gabbar Singh had defeated Thakur and ruled Ramgarh in Sholay?",
+        "answer": "Ramgarh would become an outlaw stronghold collecting taxes across the ravines. The colonial police would deploy military infantry, turning the Chambal valley into an extended siege."
+      },
+      {
+        "id": "bollywood-7",
+        "question": "What if Munna Bhai had earned a legitimate medical degree on merit?",
+        "answer": "Munna would establish the first hospital combining cutting-edge surgery with 'Jaadu Ki Jhappi' psychotherapy, fundamentally changing medical protocols and melting Dr. Asthana's cynicism."
+      },
+      {
+        "id": "bollywood-8",
+        "question": "What if the Champaner villagers lost the cricket match in Lagaan?",
+        "answer": "The villagers would face triple tax burdens, triggering severe famine and mass migration. Bhuvan would be forced to organize an armed peasant rebellion against the British garrison instead of a sporting victory."
+      },
+      {
+        "id": "bollywood-9",
+        "question": "What if Vijay Salgaonkar's family confessed during police interrogation in Drishyam?",
+        "answer": "Vijay would shoulder all legal blame in a high-profile courtroom trial. Using his extensive cinematic legal knowledge, he would mount a self-defense case that exposes police brutality and secures acquittal."
+      },
+      {
+        "id": "bollywood-10",
+        "question": "What if Kabir and Naina stayed together in Paris in Yeh Jawaani Hai Deewani?",
+        "answer": "Bunny would struggle between his dream of nomad travel journalism and domestic stability. Their love would mature into collaborative travel documentaries, proving ambition and romance can coexist."
+      },
+      {
+        "id": "bollywood-11",
+        "question": "What if Mogambo's missile strikes had succeeded in Mr. India?",
+        "answer": "The nation would plunge into martial law and foreign occupation. Arun Verma would lead an invisible guerrilla resistance force using his father's cloaking band to systematically dismantle Mogambo's empire."
+      },
+      {
+        "id": "bollywood-12",
+        "question": "What if Tara Singh was captured inside Pakistan in Gadar?",
+        "answer": "His arrest would escalate into an international diplomatic crisis. Sakina would lead a daring media and political campaign from Lahore to secure his release and reunite their cross-border family."
+      },
+      {
+        "id": "bollywood-13",
+        "question": "What if Rizwan Khan never reached the US President in My Name Is Khan?",
+        "answer": "His grassroots hurricane rescue efforts in Georgia would still spark a nationwide civil rights movement, transforming public perception of immigrant communities through sheer moral conviction."
+      },
+      {
+        "id": "bollywood-14",
+        "question": "What if Milkha Singh never looked back during the 1960 Rome Olympics 400m final?",
+        "answer": "He would clinch India's first historic Olympic track-and-field medal, igniting an athletic revolution in Indian sports fifty years before Neeraj Chopra's historic javelin gold."
+      },
+      {
+        "id": "bollywood-15",
+        "question": "What if Circuit took over the Mumbai underworld in Munna Bhai MBBS?",
+        "answer": "He would run the city's most polite and morally conflicted syndicate, settling gang wars through comedy, street food diplomacy, and well-intentioned confusion."
+      }
+    ]
+  },
+  {
+    "slug": "hollywood",
+    "name": "Hollywood & Cinema",
+    "group": "Cinema & TV",
+    "description": "Blockbuster turning points, sci-fi twists, and cinematic paradoxes.",
+    "image": "/categories/hollywood.jpg",
+    "items": [
+      {
+        "id": "hollywood-1",
+        "question": "What if Jack Dawson fitted on the wooden door with Rose on Titanic?",
+        "answer": "Both lovers would survive the freezing Atlantic night to arrive in New York together. Jack would find work as a Greenwich Village artist, and Rose would shed her aristocratic chains to build a bohemian life by his side."
+      },
+      {
+        "id": "hollywood-2",
+        "question": "What if Neo took the blue pill in The Matrix?",
+        "answer": "Thomas Anderson would wake up in his cubicle convinced his meeting with Morpheus was a bizarre hallucination. The machines would recycle Zion, and humanity's resistance would wait another cycle for the next anomaly."
+      },
+      {
+        "id": "hollywood-3",
+        "question": "What if Cobb's spinning totem never wobbled at the end of Inception?",
+        "answer": "It would prove Cobb remained permanently trapped in Limbo, having constructed a sentimental dream of returning to his children while his real body aged away unconscious in an airplane seat."
+      },
+      {
+        "id": "hollywood-4",
+        "question": "What if Cooper never entered the black hole Gargantua in Interstellar?",
+        "answer": "Without the quantum data transmitted through the tesseract to Murph's wristwatch, Earth's human population would slowly suffocate from crop blight, leaving Plan B on Edmunds' planet as humanity's sole survival."
+      },
+      {
+        "id": "hollywood-5",
+        "question": "What if John Wick's puppy was never killed?",
+        "answer": "John would remain peacefully retired in suburban New Jersey, tending his vintage Mustang and mourning Helen. The Continental, the High Table, and dozens of international assassin guilds would stay at peace."
+      },
+      {
+        "id": "hollywood-6",
+        "question": "What if the dinosaurs never breached containment in Jurassic Park?",
+        "answer": "John Hammond's park would open to commercial tourists globally. Over time, corporate cutbacks, bio-patenting scandals, and genetic black markets would spread cloned beasts into private civilian hands."
+      },
+      {
+        "id": "hollywood-7",
+        "question": "What if Tyler Durden's Project Mayhem was stopped before the bombings in Fight Club?",
+        "answer": "The narrator would be committed to a high-security psychiatric ward, while consumer debt and banking conglomerates tightened their control over working-class citizens without disruption."
+      },
+      {
+        "id": "hollywood-8",
+        "question": "What if Michael Corleone remained a legitimate citizen in The Godfather?",
+        "answer": "Sonny's hot-headed impulses would lead the Corleone family into ruin against the Five Families. Michael would become a decorated senator, watching his family's legacy disintegrate from Washington."
+      },
+      {
+        "id": "hollywood-9",
+        "question": "What if Truman Burbank never questioned the synthetic reality of Seahaven?",
+        "answer": "The Truman Show would run for decades until Truman's old age. Christof would produce Truman's live televised funeral, cementing reality television as the pinnacle of corporate surveillance."
+      },
+      {
+        "id": "hollywood-10",
+        "question": "What if Marty McFly accidentally prevented his parents from ever falling in love?",
+        "answer": "Marty and his siblings would fade permanently from existence. Doc Brown in 1955 would find an empty DeLorean and spend his twilight years unraveling the haunting mystery of the phantom time traveler."
+      },
+      {
+        "id": "hollywood-11",
+        "question": "What if Andy Dufresne's escape tunnel was discovered the night before his flight?",
+        "answer": "Warden Norton would destroy Andy's records and lock him in solitary confinement for life. Red would never receive the letter under the black volcanic rock, losing hope after parole."
+      },
+      {
+        "id": "hollywood-12",
+        "question": "What if Oppenheimer succeeded in convincing Truman to ban the hydrogen bomb?",
+        "answer": "The Soviet Union would achieve unilateral thermonuclear supremacy within years, shifting the balance of the Cold War and pushing the world toward conventional military clashes across Europe."
+      },
+      {
+        "id": "hollywood-13",
+        "question": "What if Maximus survived and restored the Roman Republic in Gladiator?",
+        "answer": "Rome would abolish the imperial throne in favor of senatorial democracy. However, civil wars between ambitious regional governors would soon destabilize the empire even faster than Commodus did."
+      },
+      {
+        "id": "hollywood-14",
+        "question": "What if the heptapods in Arrival brought a weapon instead of a universal language?",
+        "answer": "Global superpowers would panic into mutually assured pre-emptive nuclear strikes against the hovering alien crafts, triggering an extraterrestrial retaliation that ends human civilization."
+      },
+      {
+        "id": "hollywood-15",
+        "question": "What if the iceberg missed the RMS Titanic by fifty yards?",
+        "answer": "The Titanic would dock triumphantly in New York City. The disaster's absence would delay maritime safety reforms, meaning an even deadlier passenger shipwreck would occur later in worse conditions."
+      }
+    ]
+  },
+  {
+    "slug": "harry-potter",
+    "name": "Harry Potter",
+    "group": "Cinema & TV",
+    "description": "Sorting twists, magical battles, and alternate wizarding history.",
+    "image": "/categories/harry-potter.jpg",
+    "items": [
+      {
+        "id": "harry-potter-1",
+        "question": "What if the Sorting Hat placed Harry Potter in Slytherin?",
+        "answer": "Harry would navigate pure-blood prejudice from within, reshaping Slytherin's culture alongside Draco Malfoy. His cunning and Parseltongue abilities would make him a morally ambiguous savior whom the Ministry deeply feared."
+      },
+      {
+        "id": "harry-potter-2",
+        "question": "What if Neville Longbottom was the Chosen One instead of Harry?",
+        "answer": "Frank and Alice Longbottom would die protecting infant Neville. Raised by his strict grandmother with a deep herbalist connection, Neville would battle Voldemort as a patient, grounded wizard supported by the Order."
+      },
+      {
+        "id": "harry-potter-3",
+        "question": "What if Sirius Black received a fair trial and raised Harry from age one?",
+        "answer": "Harry would grow up confident, skilled in dueling, and deeply versed in Marauder lore. He would arrive at Hogwarts without childhood trauma, ready to challenge Dumbledore's protective secrecy."
+      },
+      {
+        "id": "harry-potter-4",
+        "question": "What if Lily Potter stepped aside as Snape begged her to do?",
+        "answer": "Without sacrificial love magic, baby Harry would perish from the Killing Curse. Voldemort would conquer Britain unopposed, and Snape would spend his days in despair leading a suicide rebellion."
+      },
+      {
+        "id": "harry-potter-5",
+        "question": "What if Dumbledore kept the Deathly Hallows alongside Gellert Grindelwald?",
+        "answer": "The two prodigies would establish a global wizarding supremacy 'For the Greater Good,' subjugating Muggles beneath magical rule and preventing Voldemort's rise through sheer authoritative control."
+      },
+      {
+        "id": "harry-potter-6",
+        "question": "What if Cedric Diggory survived the graveyard ambush in Goblet of Fire?",
+        "answer": "Cedric would serve as a charismatic public witness to Voldemort's return, preventing the Ministry from smearing Harry and uniting Hufflepuff and Gryffindor into an immediate wartime coalition."
+      },
+      {
+        "id": "harry-potter-7",
+        "question": "What if Remus Lupin took his Wolfsbane Potion the night Pettigrew was caught?",
+        "answer": "Peter Pettigrew would be handed over to the Ministry of Magic in chains. Sirius Black would be exonerated that night, and Voldemort's resurrection would be stalled for years without a servant."
+      },
+      {
+        "id": "harry-potter-8",
+        "question": "What if Draco Malfoy accepted Dumbledore's protection on the Astronomy Tower?",
+        "answer": "Dumbledore would stage his own death with Snape while spiriting the Malfoy family into protective custody, fracturing Voldemort's inner Death Eater circle with public defection."
+      },
+      {
+        "id": "harry-potter-9",
+        "question": "What if Hermione Granger was sorted into Ravenclaw?",
+        "answer": "Without Hermione to solve the Devil's Snare and logic potions, Harry and Ron would have failed to stop Quirrell in their first year, allowing Voldemort to retrieve the Philosopher's Stone."
+      },
+      {
+        "id": "harry-potter-10",
+        "question": "What if the Statute of Secrecy collapsed completely in modern times?",
+        "answer": "Muggle surveillance satellites, internet algorithms, and drones would expose wizards overnight. The clash between modern technology and ancient magic would trigger global political panic."
+      },
+      {
+        "id": "harry-potter-11",
+        "question": "What if Tom Riddle was adopted by a warm magical family as an infant?",
+        "answer": "Riddle would channel his extraordinary magical genius into academic reforms, becoming Hogwarts' youngest headmaster or a visionary Minister for Magic who never created Horcruxes."
+      },
+      {
+        "id": "harry-potter-12",
+        "question": "What if the Elder Wand recognized Voldemort as its true master in the final duel?",
+        "answer": "Voldemort's Killing Curse would strike Harry down without rebounding. The surviving defenders of Hogwarts would be forced to retreat into hiding across Europe in an indefinite guerrilla war."
+      },
+      {
+        "id": "harry-potter-13",
+        "question": "What if Fred Weasley survived the Battle of Hogwarts?",
+        "answer": "Weasleys' Wizarding Wheezes would expand internationally into Paris and Diagon Alley, bringing joy and magical inventions to heal the emotional scars of post-war wizarding Britain."
+      },
+      {
+        "id": "harry-potter-14",
+        "question": "What if Harry used the Resurrection Stone to summon Dumbledore and Sirius permanently?",
+        "answer": "Lingering between life and death would drive Harry mad with grief, unable to move forward into the living world as the ghosts of his past slowly consumed his sanity."
+      },
+      {
+        "id": "harry-potter-15",
+        "question": "What if Arthur Weasley was killed by Nagini in the Department of Mysteries?",
+        "answer": "The Weasley family would fracture under unbearable grief. Ron would grow hardened and bitter, while Percy's estrangement would turn into irreversible guilt and isolation."
+      }
+    ]
+  },
+  {
+    "slug": "star-wars",
+    "name": "Star Wars",
+    "group": "Cinema & TV",
+    "description": "Galactic civil wars, Jedi destiny, and the dark side of the Force.",
+    "image": "/categories/star-wars.jpg",
+    "items": [
+      {
+        "id": "star-wars-1",
+        "question": "What if Anakin Skywalker defeated Obi-Wan Kenobi on Mustafar?",
+        "answer": "Anakin would avoid the catastrophic burns that trapped him inside the Vader armor. Retaining his full midichlorian potential, he would eventually overthrow Emperor Palpatine and claim the galaxy as Sith Master."
+      },
+      {
+        "id": "star-wars-2",
+        "question": "What if Mace Windu executed Darth Sidious before Anakin intervened?",
+        "answer": "The Republic would be saved from the Sith, but the Jedi Order would face a constitutional crisis for assassinating the Supreme Chancellor, triggering political instability and public resentment."
+      },
+      {
+        "id": "star-wars-3",
+        "question": "What if Qui-Gon Jinn survived the duel with Darth Maul on Naboo?",
+        "answer": "Qui-Gon would mentor Anakin with understanding and flexibility rather than rigid dogma. Anakin would never feel alienated by the Jedi Council, preventing his descent into Darth Vader."
+      },
+      {
+        "id": "star-wars-4",
+        "question": "What if Luke Skywalker took Darth Vader's hand on Cloud City?",
+        "answer": "Father and son would assassinate Palpatine and rule the galaxy as dark sovereigns. Leia Organa would become the Jedi Order's final hope to bring balance and redeem her family."
+      },
+      {
+        "id": "star-wars-5",
+        "question": "What if Princess Leia was hidden on Tatooine and Luke raised as Alderaanian royalty?",
+        "answer": "Prince Luke would lead the diplomatic and military wing of the Rebellion, while farmgirl Leia would learn the ways of the Force under Obi-Wan's watchful eye in the desert dunes."
+      },
+      {
+        "id": "star-wars-6",
+        "question": "What if the Clone Troopers disobeyed Order 66?",
+        "answer": "The Jedi generals would counter-attack the Chancellor's guard immediately. Palpatine would be cornered and exposed, saving hundreds of Jedi Masters and preserving the Galactic Republic."
+      },
+      {
+        "id": "star-wars-7",
+        "question": "What if Han Solo never returned to the Battle of Yavin?",
+        "answer": "Darth Vader would shoot down Luke Skywalker's X-Wing. The Death Star would incinerate the rebel base on Yavin 4, crushing the organized rebellion and securing imperial reign."
+      },
+      {
+        "id": "star-wars-8",
+        "question": "What if Ahsoka Tano never left the Jedi Order before the Clone Wars ended?",
+        "answer": "Ahsoka's presence on Coruscant would anchor Anakin during his emotional turmoil, giving him a confidante who could expose Palpatine's manipulation before Order 66 was triggered."
+      },
+      {
+        "id": "star-wars-9",
+        "question": "What if Grand Admiral Thrawn won the Battle of Lothal?",
+        "answer": "Thrawn would deploy TIE Defenders en masse, rendering the Death Star redundant and establishing an impenetrable imperial fleet that the Rebel Alliance could never hope to overpower."
+      },
+      {
+        "id": "star-wars-10",
+        "question": "What if Galen Erso never engineered the exhaust port flaw into the Death Star?",
+        "answer": "The battle station would remain indestructible to starfighter torpedoes. The Empire would hold planetary extortion over the entire galaxy, annihilating rebellious worlds at will."
+      },
+      {
+        "id": "star-wars-11",
+        "question": "What if Darth Maul successfully reclaimed Mandalore permanently?",
+        "answer": "The Shadow Collective would control galactic hyperlanes and criminal syndicates, creating a third major galactic superpower capable of waging war on both Republic and Separatist forces."
+      },
+      {
+        "id": "star-wars-12",
+        "question": "What if Padmé Amidala survived child delivery?",
+        "answer": "Padmé would flee to the Unknown Regions with Senator Bail Organa, spearheading the political underground of the Rebel Alliance and fighting to redeem Anakin from afar."
+      },
+      {
+        "id": "star-wars-13",
+        "question": "What if Yoda confronted Palpatine alongside Obi-Wan on Coruscant?",
+        "answer": "Two of the greatest Jedi Masters fighting in tandem would overwhelm Darth Sidious, eliminating the Sith threat before Anakin could consolidate his grip on the Outer Rim."
+      },
+      {
+        "id": "star-wars-14",
+        "question": "What if Rey accepted Kylo Ren's offer to let old things die after Snoke's death?",
+        "answer": "They would establish a new philosophical Force dynasty, neither Jedi nor Sith, dismantling the First Order's fanaticism while governing the galaxy through balanced authoritarian unity."
+      },
+      {
+        "id": "star-wars-15",
+        "question": "What if Boba Fett killed Han Solo in the Sarlacc Pit?",
+        "answer": "The ground assault on the Endor shield generator would fail without Solo's commando leadership. The second Death Star would remain shielded and obliterate the fleet."
+      }
+    ]
+  },
+  {
+    "slug": "web-series",
+    "name": "Web Series & TV",
+    "group": "Cinema & TV",
+    "description": "Peak television cliffhangers, moral downfalls, and narrative shifts.",
+    "image": "/categories/web-series.jpg",
+    "items": [
+      {
+        "id": "web-series-1",
+        "question": "What if Walter White accepted Gretchen and Elliott's money in Breaking Bad?",
+        "answer": "Walter's medical bills would be paid, and he would return to teaching chemistry in quiet obscurity. He would avoid becoming Heisenberg, but live with the bitter resentment of accepting charity."
+      },
+      {
+        "id": "web-series-2",
+        "question": "What if Ned Stark refused to travel south to King's Landing in Game of Thrones?",
+        "answer": "Ned would rule Winterfell in safety with his family. The Lannister coup would play out in the South, while the North stood unified and fortified against the impending threat of the White Walkers."
+      },
+      {
+        "id": "web-series-3",
+        "question": "What if Eleven never opened the gate to the Upside Down in Stranger Things?",
+        "answer": "Hawkins would remain an ordinary midwestern town. Will Byers would never vanish, the Mind Flayer would stay locked in its desolate dimension, and Brenner's lab would continue clandestine research."
+      },
+      {
+        "id": "web-series-4",
+        "question": "What if the Professor's Royal Mint heist was foiled on day one in Money Heist?",
+        "answer": "The crew would be arrested or gunned down immediately by police tactical teams, and the Professor would spend his life on the run as Europe's most wanted fugitive."
+      },
+      {
+        "id": "web-series-5",
+        "question": "What if Tommy Shelby lost the battle against Billy Kimber in Peaky Blinders?",
+        "answer": "The Peaky Blinders would be wiped off the streets of Birmingham in 1919. Tommy's ambitions for political power and industrial legitimacy would die in the Small Heath mud."
+      },
+      {
+        "id": "web-series-6",
+        "question": "What if Hank Schrader never found 'Leaves of Grass' in Walter's bathroom?",
+        "answer": "Walter would have walked away clean with his millions, laundering money through car washes while living in peaceful retirement with Skyler, completely undetected by the DEA."
+      },
+      {
+        "id": "web-series-7",
+        "question": "What if Daenerys Targaryen spared King's Landing in the final battle?",
+        "answer": "She would take the Iron Throne with popular support, ruling Westeros alongside Jon Snow while instituting reforms to break the wheel of tyrannical feudal lordships."
+      },
+      {
+        "id": "web-series-8",
+        "question": "What if Robb Stark uncovered the Red Wedding conspiracy beforehand?",
+        "answer": "Robb would execute Walder Frey and Roose Bolton for treason, fortify the Riverlands, and march on Casterly Rock, fundamentally altering the War of the Five Kings."
+      },
+      {
+        "id": "web-series-9",
+        "question": "What if Kendall Roy successfully ousted Logan Roy in Succession Season 1?",
+        "answer": "Kendall would become CEO under severe debt pressures, accelerating Waystar Royco's digital transition while fighting off hostile takeovers from tech titans without his father's ruthless reputation."
+      },
+      {
+        "id": "web-series-10",
+        "question": "What if Hwang Jun-ho escaped the island with evidence in Squid Game?",
+        "answer": "The international VIP syndicate would be exposed worldwide, triggering international police raids, diplomatic scandals, and the dismantling of the death games."
+      },
+      {
+        "id": "web-series-11",
+        "question": "What if Rust Cohle and Marty Hart cracked the Yellow King case in 1995?",
+        "answer": "The Tuttle political dynasty would collapse immediately in Louisiana, preventing decades of child abductions and sparing both detectives twenty years of personal ruin."
+      },
+      {
+        "id": "web-series-12",
+        "question": "What if Jon Snow was never resurrected after being murdered by the Night's Watch?",
+        "answer": "Ramsay Bolton would retain Winterfell, the Wildlings would be slaughtered, and the North would fall defenseless when the Night King marched past the Wall."
+      },
+      {
+        "id": "web-series-13",
+        "question": "What if Michael Scott never left Dunder Mifflin Scranton in The Office?",
+        "answer": "Scranton branch would remain a surreal, chaotic haven of quirky pranks and Dundie awards, defying corporate consolidation through sheer dumb luck and camaraderie."
+      },
+      {
+        "id": "web-series-14",
+        "question": "What if Sherlock Holmes lost the psychological duel to Moriarty in BBC Sherlock?",
+        "answer": "Moriarty would burn the heart out of London's legal and security institutions, forcing John Watson to lead an underground vigilante hunt for retribution."
+      },
+      {
+        "id": "web-series-15",
+        "question": "What if Jim Hopper never survived the Russian bunker explosion?",
+        "answer": "Joyce Byers would struggle alone in California, and Eleven would lack her primary father figure and anchor against the dimensional threats orchestrated by Vecna."
+      }
+    ]
+  },
+  {
+    "slug": "anime",
+    "name": "Anime Legends",
+    "group": "Anime & Animation",
+    "description": "Naruto, One Piece, Dragon Ball, Death Note, and shonen epics.",
+    "image": "/categories/anime.jpg",
+    "items": [
+      {
+        "id": "anime-1",
+        "question": "What if Minato and Kushina survived the Nine-Tails attack in Naruto?",
+        "answer": "Naruto would grow up with loving parents and elite Hokage mentorship. He would never experience village ostracization, and the Uchiha clan massacre would be resolved through diplomatic reforms."
+      },
+      {
+        "id": "anime-2",
+        "question": "What if Portgas D. Ace survived Marineford in One Piece?",
+        "answer": "Ace would take over the Whitebeard Pirates remnants, becoming an emperor of the sea and fiercely protecting Luffy's journey toward Laugh Tale as an unstoppable brotherly alliance."
+      },
+      {
+        "id": "anime-3",
+        "question": "What if Light Yagami never discarded his moral compass in Death Note?",
+        "answer": "Light would eliminate only confirmed violent offenders without ever killing detectives or innocents. L would struggle to pinpoint Kira's location without a pattern of retaliatory murders."
+      },
+      {
+        "id": "anime-4",
+        "question": "What if Goku never bumped his head as an infant on Earth in Dragon Ball?",
+        "answer": "Kakarot would retain his brutal Saiyan instincts, obliterating humanity in Great Ape form under the full moon before selling Earth to Frieza's Cold Force empire."
+      },
+      {
+        "id": "anime-5",
+        "question": "What if Erwin Smith received the Colossal Titan serum in Attack on Titan?",
+        "answer": "Erwin's relentless strategic genius would guide Paradis through international diplomacy and targeted military raids, potentially averting Eren Yeager's catastrophic global Rumbling."
+      },
+      {
+        "id": "anime-6",
+        "question": "What if Sasuke Uchiha returned to the Hidden Leaf after defeating Itachi?",
+        "answer": "Sasuke would present Danzo's corruption to the village council, working alongside Naruto and Kakashi to redeem the Uchiha legacy from within rather than joining the Akatsuki."
+      },
+      {
+        "id": "anime-7",
+        "question": "What if Shanks never lost his arm to the Sea King saving young Luffy?",
+        "answer": "Shanks would fight with two full swords, wielding the ultimate Haki dueling mastery that rivals Mihawk across the Grand Line without any physical handicap."
+      },
+      {
+        "id": "anime-8",
+        "question": "What if Vegeta unlocked Super Saiyan on Namek before Goku?",
+        "answer": "Vegeta would brutally execute Frieza in revenge for the annihilation of Planet Vegeta, declaring himself the supreme Saiyan emperor before challenging Goku to a duel of pride."
+      },
+      {
+        "id": "anime-9",
+        "question": "What if L publicly exposed and arrested Light Yagami before Rem intervened?",
+        "answer": "Light would face a worldwide televised trial, exposing the supernatural notebook to humanity and sparking international legal debates over divine justice versus due process."
+      },
+      {
+        "id": "anime-10",
+        "question": "What if Gojo Satoru was never sealed in the Prison Realm in Jujutsu Kaisen?",
+        "answer": "Gojo would obliterate Kenjaku and the disaster curses within minutes in Shibuya, preventing Sukuna's widespread destruction and keeping the jujutsu society intact."
+      },
+      {
+        "id": "anime-11",
+        "question": "What if Tanjiro Kamado came home in time before Muzan attacked his family?",
+        "answer": "Tanjiro would have been slaughtered alongside his siblings, or transformed into a demon alongside Nezuko, ending the Sun Breathing lineage forever."
+      },
+      {
+        "id": "anime-12",
+        "question": "What if Edward and Alphonse Elric never attempted human transmutation?",
+        "answer": "Alphonse would keep his human body, and Edward would remain whole. They would become state alchemists through sheer academic passion, discovering Father's nationwide conspiracy peacefully."
+      },
+      {
+        "id": "anime-13",
+        "question": "What if Madara Uchiha's Infinite Tsukuyomi was never unsealed?",
+        "answer": "Humanity would dream peacefully inside the divine tree cocoon forever, while their chakra was slowly converted into White Zetsu soldiers for an alien invasion."
+      },
+      {
+        "id": "anime-14",
+        "question": "What if Itachi Uchiha chose his clan over the Hidden Leaf village?",
+        "answer": "The Uchiha coup would trigger a bloody civil war within Konoha, leaving the village defenseless against immediate invasions from the Hidden Cloud and Stone villages."
+      },
+      {
+        "id": "anime-15",
+        "question": "What if All Might never sustained his crippling injury against All For One?",
+        "answer": "The Symbol of Peace would remain in peak condition, deterring the League of Villains from ever rising and allowing Izuku Midoriya to master One For All without rushing."
+      }
+    ]
+  },
+  {
+    "slug": "cartoons",
+    "name": "Cartoons & Animation",
+    "group": "Anime & Animation",
+    "description": "Nostalgic 90s classics, childhood favorites, and animated twists.",
+    "image": "/categories/cartoons.jpg",
+    "items": [
+      {
+        "id": "cartoons-1",
+        "question": "What if Tom and Jerry teamed up permanently against the household?",
+        "answer": "They would run an unstoppable suburban crime syndicate, manipulating Spike the bulldog and raiding the refrigerator with coordinated slapstick precision."
+      },
+      {
+        "id": "cartoons-2",
+        "question": "What if Ben 10 never took off the Omnitrix and unlocked Alien X early?",
+        "answer": "Ten-year-old Ben would hold godlike reality-warping power, but risk getting permanently frozen in debate between the two floating celestial personalities inside Alien X."
+      },
+      {
+        "id": "cartoons-3",
+        "question": "What if Samurai Jack defeated Aku in their very first battle?",
+        "answer": "Jack would never be flung into the dystopian future. He would restore his father's ancient kingdom and rule as an enlightened emperor of peace."
+      },
+      {
+        "id": "cartoons-4",
+        "question": "What if Candace actually busted Phineas and Ferb just once?",
+        "answer": "Mom would see the backyard roller-coaster, ground the brothers for the entire summer, and unwittingly shut down Danville's primary source of engineering joy."
+      },
+      {
+        "id": "cartoons-5",
+        "question": "What if Avatar Aang never vanished and fought the Fire Nation at age twelve?",
+        "answer": "Without mastering the four elements, Aang would have fallen to Fire Lord Sozin's comet-powered offensive, wiping out the Air Nomads and ending the Avatar cycle."
+      },
+      {
+        "id": "cartoons-6",
+        "question": "What if Dexter's sister Dee Dee never entered his secret laboratory?",
+        "answer": "Dexter would invent cold fusion, cure all human diseases, and launch planetary orbital stations by age ten without any interruptions or explosions."
+      },
+      {
+        "id": "cartoons-7",
+        "question": "What if the Powerpuff Girls accidentally destroyed Townsville in battle?",
+        "answer": "The Mayor would exile the girls in tearful heartbreak, forcing Professor Utonium to relocate to Citiesville where their superpowers were treated with fear."
+      },
+      {
+        "id": "cartoons-8",
+        "question": "What if Danny Phantom revealed his ghost-hunting superhero identity to his parents?",
+        "answer": "Jack and Maddie Fenton would overcome their initial ghost prejudice to build state-of-the-art spectral battle suits specifically engineered to protect their half-ghost son."
+      },
+      {
+        "id": "cartoons-9",
+        "question": "What if Courage the Cowardly Dog failed to save Muriel from Katz?",
+        "answer": "Nowhere would lose its gentlest soul, and Courage would embark on a grim, desperate odyssey through surreal paranormal horrors to retrieve her spirit."
+      },
+      {
+        "id": "cartoons-10",
+        "question": "What if SpongeBob SquarePants was fired permanently from the Krusty Krab?",
+        "answer": "Krabby Patty quality would plummet, driving Bikini Bottom into culinary despair, while Plankton's Chum Bucket thrived by hiring the cheerful sponge."
+      },
+      {
+        "id": "cartoons-11",
+        "question": "What if Scooby-Doo and the Mystery Gang encountered a genuine supernatural entity?",
+        "answer": "Pulling off the rubber mask would reveal a terrifying eldritch face, turning their cheerful mystery road trip into a Lovecraftian survival nightmare."
+      },
+      {
+        "id": "cartoons-12",
+        "question": "What if Teen Titans never recruited Raven and Trigon entered Earth?",
+        "answer": "Trigon would turn Earth's oceans to blood and stone, enslaving all superheroes until only a desperate underground band of Titans remained."
+      },
+      {
+        "id": "cartoons-13",
+        "question": "What if Ash Ketchum won the Indigo Plateau Pokémon League championship on his first attempt?",
+        "answer": "Ash would become an instant celebrity prodigy at age ten, losing the humble wanderlust and underdog resilience that defined his journey across all regions."
+      },
+      {
+        "id": "cartoons-14",
+        "question": "What if Rick Sanchez's portal gun broke, trapping him in a reality without technology?",
+        "answer": "Stripped of sci-fi gadgets, Rick would be forced to confront his emotional trauma and family relationships without dimensional escapism to numb the pain."
+      },
+      {
+        "id": "cartoons-15",
+        "question": "What if Batman: The Animated Series showed Bruce Wayne fully reforming his villains?",
+        "answer": "Gotham would transform into an asylum-free metropolis where Mr. Freeze cured his wife, Harvey Dent practiced law, and Bruce Wayne funded community schools."
+      }
+    ]
+  },
+  {
+    "slug": "ramayana",
+    "name": "Ramayana",
+    "group": "Mythology & Epics",
+    "description": "Divine destiny, dharma dilemmas, and the timeless epic of Lord Rama.",
+    "image": "/categories/ramayana.jpg",
+    "items": [
+      {
+        "id": "ramayana-1",
+        "question": "What if Kaikeyi never demanded Lord Rama's fourteen-year exile?",
+        "answer": "Rama would be crowned King of Ayodhya amidst universal celebration. However, without his journey through the Dandaka forest, the sages would remain terrorized by demons, and Ravana's tyranny would remain unchallenged."
+      },
+      {
+        "id": "ramayana-2",
+        "question": "What if Sita never crossed the sacred Lakshman Rekha?",
+        "answer": "Ravana, disguised as an ascetic, would be unable to seize her through deception. He would either retreat in humiliation or be forced into an open confrontation with Rama and Lakshmana on their own ground."
+      },
+      {
+        "id": "ramayana-3",
+        "question": "What if Ravana listened to Vibhishana and returned Sita with reverence?",
+        "answer": "Lanka would be spared from war and destruction. Ravana would retain his celestial kingdom and his immense scholarship, acknowledging Rama's supreme divinity and establishing a lasting golden peace."
+      },
+      {
+        "id": "ramayana-4",
+        "question": "What if Bharata accepted the royal crown instead of ruling by Rama's sandals?",
+        "answer": "Ayodhya's citizens would see it as a triumph of Kaikeyi's conspiracy, fracturing the moral integrity of the Raghu dynasty. Bharata's exemplary devotion (Bhakti) would lose its eternal place in moral philosophy."
+      },
+      {
+        "id": "ramayana-5",
+        "question": "What if Kumbhakarna refused to fight against Lord Rama out of righteousness?",
+        "answer": "Lanka's greatest powerhouse would defect or fast in protest, morally crippling Ravana's army and proving that dharma supersedes unquestioning familial loyalty."
+      },
+      {
+        "id": "ramayana-6",
+        "question": "What if Hanuman revealed his cosmic Vishwaroop form in Ravana's royal court?",
+        "answer": "The sheer divine radiance would paralyze Lanka's demonic host with awe and terror, dismantling Ravana's pride before a single soldier stepped onto the battlefield."
+      },
+      {
+        "id": "ramayana-7",
+        "question": "What if Sugriva and Vali resolved their brotherly feud peacefully?",
+        "answer": "Vali, possessing the divine boon to drain half his opponent's strength in combat, would join Rama's forces, making the Vanara army an invincible force that could breach Lanka within hours."
+      },
+      {
+        "id": "ramayana-8",
+        "question": "What if Lakshmana was never struck by Indrajit's mystical Shakti weapon?",
+        "answer": "Hanuman would not need to fly across India to lift Mount Dronagiri for the Sanjeevani herb. The siege of Lanka would proceed without the emotional panic that tested the Vanara army's resolve."
+      },
+      {
+        "id": "ramayana-9",
+        "question": "What if Maricha refused Ravana's command to become the golden deer?",
+        "answer": "Ravana would slay Maricha on the spot, but without the golden deer decoy, Ravana would have to attempt an overt abduction that risked immediate combat against Rama and Lakshmana."
+      },
+      {
+        "id": "ramayana-10",
+        "question": "What if King Dasharatha refused Kaikeyi's two boons and broke his word?",
+        "answer": "The Raghu clan's supreme vow of truth ('Raghukul reet sada chali aayi, pran jaye par vachan na jayi') would shatter, undermining the moral foundation of the entire epic."
+      },
+      {
+        "id": "ramayana-11",
+        "question": "What if Indrajit completed his secret Nikumbhila Yajna undisturbed?",
+        "answer": "He would emerge with an invincible celestial chariot and indestructible weapons, capable of annihilating all opponents and creating an insurmountable hurdle for the Vanara forces."
+      },
+      {
+        "id": "ramayana-12",
+        "question": "What if Jatayu successfully grounded Ravana's Pushpaka Vimana?",
+        "answer": "Ravana would be stranded in the southern forests, allowing Rama and Lakshmana to catch up quickly and battle Ravana directly in Dandaka forest before Lanka was ever fortified."
+      },
+      {
+        "id": "ramayana-13",
+        "question": "What if Urmila insisted on accompanying Lakshmana into the forest?",
+        "answer": "Lakshmana would be unable to take his vow of fourteen years of sleepless vigilance (Nidra), which was the exact celestial requirement needed to slay Indrajit in battle."
+      },
+      {
+        "id": "ramayana-14",
+        "question": "What if Sita's divine purity was never subjected to public doubt in Ayodhya?",
+        "answer": "Rama and Sita would rule Ayodhya together in unbroken harmony for decades, raising Luv and Kush as royal princes in the palace rather than in Valmiki's humble forest ashram."
+      },
+      {
+        "id": "ramayana-15",
+        "question": "What if Vibhishana was discovered and executed by Ravana before escaping Lanka?",
+        "answer": "Rama's army would lack insider knowledge of Lanka's secret gateways, Indrajit's hidden rituals, and the secret vulnerable nectar spot in Ravana's navel."
+      },
+      {
+        "id": "ramayana-16",
+        "question": "What If the Vanara Bridge to Lanka Had Collapsed Midway?",
+        "answer": "In this hypothetical retelling, a collapse during the crossing would strand part of Rama's army on opposite shores and give Lanka time to prepare its defenses. Nala and the Vanara builders would need to repair the route or find a way to ferry troops and supplies across the sea. The delay would test the alliance's patience, making coordination as important as strength."
+      },
+      {
+        "id": "ramayana-17",
+        "question": "What If Shabari Had Joined Rama's Search for Sita?",
+        "answer": "In this hypothetical retelling, Shabari leaves her hermitage after meeting Rama and helps guide the search toward the southern forests. Her patience and knowledge of the region could help the party find allies and clues sooner, while her devotion steadies them through setbacks. The journey would become a wider act of service, with an elder seeker contributing alongside the Vanara heroes."
+      },
+      {
+        "id": "ramayana-18",
+        "question": "What If Hanuman Had Never Discovered His Powers?",
+        "answer": "In the traditional story, Jambavan reminds Hanuman of abilities he had forgotten; without that awakening in this hypothetical, the search party might not cross the ocean to Lanka. Rama would need another route or messenger, giving Ravana more time to fortify the island and isolate Sita. The Vanaras' courage would still matter, but the mission would depend on cooperation rather than one extraordinary leap."
+      },
+      {
+        "id": "ramayana-19",
+        "question": "What If Indrajit Had Offered Rama a Peace Treaty?",
+        "answer": "In this alternate telling, Indrajit's proposal would force Lanka's court to confront the war's cost before the final battle. Rama could consider peace only if Sita were safely returned and Ravana ended his aggression; a temporary pause without those terms would simply prolong the danger. Indrajit's choice would reveal whether loyalty to his father could coexist with responsibility for Lanka's people."
+      },
+      {
+        "id": "ramayana-20",
+        "question": "What If Mandodari Had Left Lanka Before the War?",
+        "answer": "In this hypothetical retelling, Mandodari's departure after Ravana rejects her warnings would make the royal court's dissent impossible to ignore. Her absence could weaken morale and sharpen the consequences of Ravana's choices, though it would not by itself stop the armies from marching. The story would follow a queen trying to protect her people when counsel inside the palace has failed."
+      }
+    ]
+  },
+  {
+    "slug": "mahabharata",
+    "name": "Mahabharata",
+    "group": "Mythology & Epics",
+    "description": "Kurukshetra war, karmic threads, Krishna's counsel, and the game of dice.",
+    "image": "/categories/mahabharata.jpg",
+    "items": [
+      {
+        "id": "mahabharata-1",
+        "question": "What if Karna knew his true royal lineage as Kunti's eldest son before the dice game?",
+        "answer": "Karna would refuse to participate in Duryodhana's humiliations and claim his rightful place as eldest Pandava. The Pandavas would unite under his crown, preventing the Kurukshetra war entirely."
+      },
+      {
+        "id": "mahabharata-2",
+        "question": "What if Draupadi allowed Karna to contest in her Swayamvara?",
+        "answer": "Karna would effortlessly string the celestial bow and marry Draupadi. His alliance with the Pandavas would be secured, preventing his dependence on Duryodhana and changing the course of history."
+      },
+      {
+        "id": "mahabharata-3",
+        "question": "What if Yudhishthira refused Shakuni's challenge to the game of dice?",
+        "answer": "The Pandavas would retain the splendor of Indraprastha. Duryodhana's jealousy would fester into an open military siege of Indraprastha rather than a cowardly gambling ambush."
+      },
+      {
+        "id": "mahabharata-4",
+        "question": "What if Bhishma broke his vow of celibacy and throne loyalty to stop Duryodhana?",
+        "answer": "Bhishma would depose Dhritarashtra and crown Yudhishthira, using his peerless martial authority to enforce righteous rule across Bharatvarsha."
+      },
+      {
+        "id": "mahabharata-5",
+        "question": "What if Krishna picked up arms as a warrior instead of serving as a charioteer?",
+        "answer": "Armed with the Sudarshana Chakra, Krishna would end the war on day one. However, humanity would never receive the Bhagavad Gita, the timeless philosophical guide to duty and consciousness."
+      },
+      {
+        "id": "mahabharata-6",
+        "question": "What if Abhimanyu knew how to break out of the deadly Chakravyuha?",
+        "answer": "The sixteen-year-old prodigy would slaughter the Kaurava inner circle and return to the Pandava camp victorious, breaking the back of Drona's army and sparing Arjuna's greatest sorrow."
+      },
+      {
+        "id": "mahabharata-7",
+        "question": "What if Duryodhana accepted Krishna's humble peace offer of five villages?",
+        "answer": "Millions of warriors would live, and the Pandavas would govern their small provinces in peaceful contemplation. But the karmic debt of Hastinapur's corruption would remain unresolved."
+      },
+      {
+        "id": "mahabharata-8",
+        "question": "What if Ekalavya's thumb was never demanded as Gurudakshina by Drona?",
+        "answer": "Ekalavya would stand as the greatest archer in Bharatvarsha, surpassing Arjuna. If allied with Jarasandha or Duryodhana, his unstoppable arrows would have overwhelmed the Pandavas."
+      },
+      {
+        "id": "mahabharata-9",
+        "question": "What if Dhritarashtra was born with his eyesight intact?",
+        "answer": "He would be crowned king legitimately over Pandu, eliminating the deep-seated bitterness of being bypassed, and his sons would grow up without obsessive paranoia over the throne."
+      },
+      {
+        "id": "mahabharata-10",
+        "question": "What if Ashwatthama never raided the Pandava camp on the eighteenth night?",
+        "answer": "Draupadi's five sons (Upapandavas) would survive to inherit the prosperous kingdoms of Hastinapur and Indraprastha, securing an unbroken lineage for the Pandavas."
+      },
+      {
+        "id": "mahabharata-11",
+        "question": "What if Gandhari's protective glance covered Duryodhana's thighs as well?",
+        "answer": "Duryodhana would possess an entirely adamantine, impenetrable body. Bhima would be unable to defeat him in their mace duel, overturning the final outcome of the war."
+      },
+      {
+        "id": "mahabharata-12",
+        "question": "What if Arjuna laid down his Gandiva bow and walked away from Kurukshetra?",
+        "answer": "Without Krishna's Gita discourse, dharma would surrender to political tyranny. The Kauravas would exterminate the Pandavas, ushering in an era of despotic rule across the land."
+      },
+      {
+        "id": "mahabharata-13",
+        "question": "What if Barbarika was permitted to fight with his three infallible arrows?",
+        "answer": "Because his vow forced him to support whichever side was losing, Barbarika's arrows would wipe out both armies alternately until no warrior on either side was left breathing."
+      },
+      {
+        "id": "mahabharata-14",
+        "question": "What if Balarama intervened to stop the mace duel between Bhima and Duryodhana?",
+        "answer": "The war would end in a bitter political stalemate, with both princes alive and the kingdom divided along hostile borders under continuous tension."
+      },
+      {
+        "id": "mahabharata-15",
+        "question": "What if Jayadratha was protected until sunset, forcing Arjuna to self-immolate?",
+        "answer": "Arjuna would step into the funeral pyre as vowed. Without their supreme archer, the remaining Pandavas would be systematically eliminated by Karna and Drona the following morning."
+      }
+    ]
+  },
+  {
+    "slug": "indian-mythology",
+    "name": "Indian Mythology",
+    "group": "Mythology & Epics",
+    "description": "Cosmic churnings, Shiva's tandava, avatar descents, and celestial boons.",
+    "image": "/categories/indian-mythology.jpg",
+    "items": [
+      {
+        "id": "mythology-1",
+        "question": "What if Lord Shiva refused to swallow the deadly Halahala poison?",
+        "answer": "The primordial poison from the Samudra Manthan would consume all three worlds in acidic fumes, wiping out devas, asuras, and mortal creatures before the nectar of immortality ever surfaced."
+      },
+      {
+        "id": "mythology-2",
+        "question": "What if Mahishasura had not exempted women from his immortality boon?",
+        "answer": "No deity or army could ever end his life. Goddess Durga would not have been invoked to manifest, and the heavens would remain under demon dominion indefinitely."
+      },
+      {
+        "id": "mythology-3",
+        "question": "What if Garuda failed to retrieve the Amrita from Indra's heaven?",
+        "answer": "His mother Vinata would remain eternally enslaved to the serpents, and Garuda would never become the supreme celestial mount of Lord Vishnu."
+      },
+      {
+        "id": "mythology-4",
+        "question": "What if Lord Ganesha's original head was never severed by Shiva's trishul?",
+        "answer": "He would remain a mortal creation of Parvati's turmeric paste rather than being elevated to the supreme elephant-headed remover of all obstacles (Vighnaharta)."
+      },
+      {
+        "id": "mythology-5",
+        "question": "What if King Harishchandra compromised on the truth during his trials?",
+        "answer": "The cosmic ideal of Satya (uncompromising truth) would lose its greatest mortal exemplar, proving that human integrity always buckles under suffering."
+      },
+      {
+        "id": "mythology-6",
+        "question": "What if Bhasmasura never tested his boon of destruction upon himself?",
+        "answer": "Lord Shiva would have been chased across creation by his own boon until Lord Vishnu intervened through the mesmerizing dance of Mohini."
+      },
+      {
+        "id": "mythology-7",
+        "question": "What if the river Ganga descended to Earth without Shiva cushioning the fall?",
+        "answer": "Her torrential celestial velocity would split the Earth's crust open, washing continents into the netherworld instead of sanctifying the plains of Bharat."
+      },
+      {
+        "id": "mythology-8",
+        "question": "What if Hiranyakashipu accepted Prahlada's devotion to Vishnu?",
+        "answer": "Lord Narasimha would never manifest from the palace pillar. The demon empire would transform into an enlightened spiritual realm without catastrophic bloodshed."
+      },
+      {
+        "id": "mythology-9",
+        "question": "What if King Bali refused to surrender the third pace of land to Vamana?",
+        "answer": "Bali would break his sacred word of sacrifice, forfeiting his renowned honor and being cast down into Patala as a disgraced oath-breaker rather than an eternal king."
+      },
+      {
+        "id": "mythology-10",
+        "question": "What if Parashurama never laid down his celestial battle-axe?",
+        "answer": "The warrior caste would be eradicated continuously across all ages, leaving kingdoms without protectors to withstand external invasions."
+      },
+      {
+        "id": "mythology-11",
+        "question": "What if Sati never immolated herself during Daksha's arrogant yajna?",
+        "answer": "Lord Shiva's devastating Tandava of grief would never shake the cosmos, and the fifty-one sacred Shakti Peethas would never be established across the subcontinent."
+      },
+      {
+        "id": "mythology-12",
+        "question": "What if Kacha chose to marry Devayani after learning the Sanjivani mantra?",
+        "answer": "He would violate the sacred guru-disciple moral code, and the devas would remain at the mercy of the asuras without the knowledge to resurrect fallen warriors."
+      },
+      {
+        "id": "mythology-13",
+        "question": "What if sage Vishvamitra never challenged the cosmic order to create a new heaven?",
+        "answer": "King Trishanku would remain suspended in mid-air in despair, and Vishvamitra would never prove that human tapasya can rival divine creation."
+      },
+      {
+        "id": "mythology-14",
+        "question": "What if Kamadhenu, the wish-fulfilling divine cow, was seized by a tyrant?",
+        "answer": "Endless material resources and celestial armies would be summoned at will, turning mortal kings into unchecked tyrants until the Trimurti stepped in to restore balance."
+      },
+      {
+        "id": "mythology-15",
+        "question": "What if the churning of the cosmic ocean produced only poisons and no nectar?",
+        "answer": "The gods and demons would drown in existential dread, realizing that creation's depths contain only destruction without divine grace."
+      },
+      {
+        "id": "mythology-16",
+        "question": "What If Karna Had Known His True Identity Before the Kurukshetra War?",
+        "answer": "In many tellings, Kunti reveals Karna's birth shortly before the war; this hypothetical moves that revelation early enough for him to reconsider his loyalties. Knowing he was the eldest Pandava would deepen his conflict, but it would not automatically erase his gratitude to Duryodhana or the promises he had made. The brothers might negotiate before battle, yet Karna's honor and the obligations on both sides could still lead to tragedy."
+      },
+      {
+        "id": "mythology-17",
+        "question": "What If Eklavya Had Become a Royal Student of Dronacharya?",
+        "answer": "In this alternate telling, Drona accepts Eklavya as a student, allowing his talent to develop openly alongside the Kuru princes. Eklavya's discipline could broaden the court's view of who deserves formal training and give Hastinapura another exceptional archer. The episode would turn on whether the royal school honors merit consistently, rather than demanding the sacrifice described in the traditional account."
+      },
+      {
+        "id": "mythology-18",
+        "question": "What If Bhishma Had Refused to Lead the Kaurava Army?",
+        "answer": "If Bhishma declined command at Kurukshetra, Duryodhana would lose the elder whose presence gave the Kaurava cause both military strength and moral weight. Another commander might push for a more ruthless strategy, while Bhishma's refusal could make the court confront the cost of fighting its own kin. His choice would not by itself stop the war, but it could alter its early battles and deepen calls for peace."
+      },
+      {
+        "id": "mythology-19",
+        "question": "What If Arjuna Had Refused to Fight in the Mahabharata War?",
+        "answer": "The Bhagavad Gita begins with Arjuna recoiling from the prospect of fighting his relatives, and Krishna answers with counsel on duty, action, and spiritual understanding. In this hypothetical, Arjuna remains unwilling even after that teaching, leaving the Pandava forces without their foremost archer and weakening their resolve. The conflict might stall or take a darker course, but refusal alone would not resolve the injustice that brought the armies to Kurukshetra."
+      },
+      {
+        "id": "mythology-20",
+        "question": "What If Ashwatthama Had Never Received His Curse?",
+        "answer": "In the epic tradition, Krishna curses Ashwatthama after his night attack on the sleeping camp; without that punishment, he would avoid the long, painful wandering associated with it. That would not erase the deaths or the moral weight of his actions, and the survivors would still demand accountability. His future might become one of ordinary exile or judgment, rather than a timeless warning about vengeance without restraint."
+      }
+    ]
+  },
+  {
+    "slug": "science",
+    "name": "Science & Nature",
+    "group": "Science & Discovery",
+    "description": "Physical constants breaking down, ecological shifts, and scientific thought experiments.",
+    "image": "/categories/science.jpg",
+    "items": [
+      {
+        "id": "science-1",
+        "question": "What if gravity on Earth suddenly halved overnight?",
+        "answer": "Humans could leap over rooftops, but atmospheric pressure would drop drastically. Oceans would expand, satellites would drift out of orbit, and modern skyscrapers would struggle under reduced structural tension."
+      },
+      {
+        "id": "science-2",
+        "question": "What if the Sun disappeared for exactly twenty-four hours?",
+        "answer": "Earth would plunge into freezing darkness while continuing to orbit the barycenter in inertial drift. Global temperatures would plummet ten degrees, power grids would strain, but life would survive the temporary eclipse."
+      },
+      {
+        "id": "science-3",
+        "question": "What if humans could photosynthesize like plants through skin?",
+        "answer": "Famine and agriculture dependencies would collapse. Cities would be built around sunbathing plazas, clothing would become minimalist, and geopolitics would revolve around equatorial access."
+      },
+      {
+        "id": "science-4",
+        "question": "What if all terrestrial ice melted within a single week?",
+        "answer": "Global sea levels would surge by 216 feet, drowning London, New York, Mumbai, and Tokyo. Billions of coastal climate refugees would trigger the largest migration crisis in human history."
+      },
+      {
+        "id": "science-5",
+        "question": "What if oxygen levels in Earth's atmosphere doubled?",
+        "answer": "Insects would grow to giant prehistoric sizes, vehicle mileage would soar, and human stamina would reach superhuman levels. However, every campfire would risk triggering uncontrollable continent-wide wildfires."
+      },
+      {
+        "id": "science-6",
+        "question": "What if the speed of light was only one hundred kilometers per hour?",
+        "answer": "Driving a car on a highway would trigger noticeable relativistic time dilation and Doppler color shifts. Cars would age slower than pedestrians, and headlights would turn blue as you accelerated."
+      },
+      {
+        "id": "science-7",
+        "question": "What if humans unlocked biological immortality halting cellular aging?",
+        "answer": "Retirement would vanish, birth rates would be legally capped, and generational wealth would freeze permanently under immortal oligarchs, redefining human ambition and philosophy."
+      },
+      {
+        "id": "science-8",
+        "question": "What if Earth's magnetic poles completely flipped in forty-eight hours?",
+        "answer": "The magnetosphere would weaken temporarily, exposing global communication satellites, airlines, and power grids to intense solar radiation and causing widespread blackout disruptions."
+      },
+      {
+        "id": "science-9",
+        "question": "What if friction ceased to exist on Earth for sixty seconds?",
+        "answer": "Every moving vehicle would skid unstoppably, pedestrians would slide into heaps, knots would unravel, and buildings resting on foundation friction would slide into ruin."
+      },
+      {
+        "id": "science-10",
+        "question": "What if bees completely vanished from ecosystems overnight?",
+        "answer": "Over 75% of global flowering crops would suffer pollination collapse. Fruit, vegetable, and nut yields would disintegrate, sparking rapid global agricultural famine within three seasons."
+      },
+      {
+        "id": "science-11",
+        "question": "What if humans possessed electro-receptors like sharks?",
+        "answer": "We would sense electronic devices through walls, perceive each other's emotional heart rhythms through subtle bio-electric fields, making deceit nearly impossible."
+      },
+      {
+        "id": "science-12",
+        "question": "What if Earth stopped rotating on its axis for five seconds?",
+        "answer": "Atmospheric momentum would send supersonic winds of 1,000 mph ripping across the equator, flinging oceans inland and shattering every man-made structure within seconds."
+      },
+      {
+        "id": "science-13",
+        "question": "What if sound waves could travel through the vacuum of outer space?",
+        "answer": "The nuclear fusion reactions of the Sun would reach Earth as a relentless, deafening 100-decibel roar, akin to standing permanently beside a running jet engine."
+      },
+      {
+        "id": "science-14",
+        "question": "What if quantum teleportation of macroscopic humans was achieved?",
+        "answer": "Aviation and border control would become obsolete overnight, but philosophical dilemmas about whether the original person was destroyed and cloned would haunt humanity."
+      },
+      {
+        "id": "science-15",
+        "question": "What if lightning was harnessable with 100% efficiency?",
+        "answer": "Stormy coastlines would become clean energy goldmines, with lightning collector towers providing instantaneous mega-batteries that power entire metropolitan regions."
+      },
+      {
+        "id": "science-16",
+        "question": "What If Humans Could Breathe Underwater?",
+        "answer": "If humans evolved efficient gills, coastal life would expand into reefs and underwater settlements, while rescue teams could reach submerged wrecks without bulky tanks. Gills would still need oxygen-rich water and would work poorly in polluted or oxygen-depleted seas. The biggest shift might be cultural: oceans would become lived-in environments that societies must protect as carefully as their land."
+      },
+      {
+        "id": "science-17",
+        "question": "What If Earth Had Two Moons?",
+        "answer": "A second large moon would reshape tides, nights, and coastal ecosystems, with the exact effects depending on its mass and orbit. If the moons were stable, their changing alignments could produce unusually strong spring tides and more complicated calendars. If their gravitational relationship were unstable, the system could instead disturb satellites and eventually threaten Earth's orbital neighborhood."
+      },
+      {
+        "id": "science-18",
+        "question": "What If Dinosaurs Never Went Extinct?",
+        "answer": "If the asteroid impact had missed, non-avian dinosaurs would likely have continued evolving while mammals remained competing members of many ecosystems. There is no reason to assume dinosaurs would have developed human-like intelligence, but their diversity could have kept forests, grasslands, and food webs very different. Modern humans might never have appeared in the form we know, and our familiar history would have no place to begin."
+      },
+      {
+        "id": "science-19",
+        "question": "What If Earth's Oceans Turned Freshwater Overnight?",
+        "answer": "If seawater suddenly lost its dissolved salts, ocean currents, marine chemistry, and the organisms adapted to them would be thrown into crisis. Many salt-dependent species would die or migrate, disrupting food webs that support fisheries and coastal communities. The fresh water would be an enormous resource only in theory: ecosystems and water treatment systems would need time to adapt, and the transition itself would be devastating."
+      },
+      {
+        "id": "science-20",
+        "question": "What If Human Skin Could Sense Magnetic Fields?",
+        "answer": "If people could detect Earth's magnetic field as a direct sensation, many would gain an internal sense of direction even underground or on cloudy nights. The ability might help navigation, but nearby electronics and local magnetic distortions could make crowded cities feel noisy or confusing. Scientists would investigate whether the sense came from specialized cells, turning human perception into a new field of biology."
+      }
+    ]
+  },
+  {
+    "slug": "space",
+    "name": "Space & Cosmos",
+    "group": "Science & Discovery",
+    "description": "Alien beacons, rogue celestial bodies, and the mysteries of the universe.",
+    "image": "/categories/space.jpg",
+    "items": [
+      {
+        "id": "space-1",
+        "question": "What if a rogue brown dwarf entered our Solar System?",
+        "answer": "Its gravitational disruption would peel planets from their orbits, fling Kuiper Belt comets toward the inner planets, and destabilize Earth's orbital climate into an ice age."
+      },
+      {
+        "id": "space-2",
+        "question": "What if we received an unambiguous radio signal from Proxima Centauri?",
+        "answer": "Humanity would unite in existential shock, realizing we are not alone. Space agencies would receive limitless funding to launch interstellar laser-sail probes."
+      },
+      {
+        "id": "space-3",
+        "question": "What if the Moon drifted three times further away from Earth?",
+        "answer": "Tidal ranges would dwindle to a third, ocean ecosystems would stagnate, and Earth's rotational axis would wobble wildly, causing chaotic season swings over millennia."
+      },
+      {
+        "id": "space-4",
+        "question": "What if Mars retained its magnetic field and liquid oceans?",
+        "answer": "Mars would be a lush blue-green world today. Humanity would observe alien vegetation through telescopes and engage in an early interplanetary space race in the 20th century."
+      },
+      {
+        "id": "space-5",
+        "question": "What if Earth was a moon orbiting a gas giant like Saturn?",
+        "answer": "Our night sky would be dominated by colossal swirling rings and cloud bands. Regular eclipses would create dramatic daily temperature shifts and spectacular tidal phenomena."
+      },
+      {
+        "id": "space-6",
+        "question": "What if the dinosaur-killing asteroid missed Earth by ten minutes?",
+        "answer": "Dinosaurs would continue evolving for sixty-six million years, developing complex social intelligence, while small mammals remained nocturnal burrowers without room to rise."
+      },
+      {
+        "id": "space-7",
+        "question": "What if a micro black hole passed straight through Earth's core?",
+        "answer": "It would punch cleanly through the planet in seconds without destroying it, causing localized seismic tremors and sonic booms at its entry and exit points."
+      },
+      {
+        "id": "space-8",
+        "question": "What if humans built self-sustaining cities inside lunar lava tubes?",
+        "answer": "Sheltered from solar radiation and micrometeorites, lunar citizens would develop low-gravity bone density and pioneer off-world manufacturing and deep-space telescope arrays."
+      },
+      {
+        "id": "space-9",
+        "question": "What if Jupiter ignited into a second star in our solar system?",
+        "answer": "Earth would become part of a binary star system. Nights would turn into dim twilight, plant photosynthesis would accelerate, and planetary orbits would experience minor gravitational shifts."
+      },
+      {
+        "id": "space-10",
+        "question": "What if a Carrington-level solar superflare hit modern Earth?",
+        "answer": "Global power transformers would blow out simultaneously, cutting high-voltage electricity, internet, and banking for months, causing trillions in economic recovery."
+      },
+      {
+        "id": "space-11",
+        "question": "What if microbial fossil life was discovered under the ice of Europa?",
+        "answer": "It would prove that life is not unique to Earth, confirming the Copernican principle and implying that the universe is teeming with biological activity."
+      },
+      {
+        "id": "space-12",
+        "question": "What if Earth was located inside a dense globular star cluster?",
+        "answer": "Thousands of brilliant stars would illuminate the sky, turning nights as bright as daylight and inspiring early civilizations to study stellar navigation millennia earlier."
+      },
+      {
+        "id": "space-13",
+        "question": "What if astronomers discovered an ancient Dyson Sphere around a distant star?",
+        "answer": "It would confirm the existence of a Type II Kardashev civilization, shifting human ambition toward stellar mega-engineering and long-range laser communication."
+      },
+      {
+        "id": "space-14",
+        "question": "What if the universe's expansion reversed into a Big Crunch?",
+        "answer": "Billions of years in the future, cosmic background radiation would heat up into blinding glare, galaxies would collide, and all matter would compress into a final singularity."
+      },
+      {
+        "id": "space-15",
+        "question": "What if Voyager 1 was intercepted and returned by an extraterrestrial probe?",
+        "answer": "Humanity would receive its own Golden Record back, accompanied by an annotated galactic star chart welcoming us to the wider cosmic neighborhood."
+      }
+    ]
+  },
+  {
+    "slug": "history",
+    "name": "Alternative History",
+    "group": "History & World",
+    "description": "Fateful battles, forgotten empires, and world-altering historical turns.",
+    "image": "/categories/history.jpg",
+    "items": [
+      {
+        "id": "history-1",
+        "question": "What if the Library of Alexandria was never destroyed?",
+        "answer": "Centuries of ancient astronomical, mathematical, and medical manuscripts would survive intact, potentially accelerating the European Renaissance and Scientific Revolution by a thousand years."
+      },
+      {
+        "id": "history-2",
+        "question": "What if Alexander the Great lived to age eighty?",
+        "answer": "Alexander would march westward to conquer Rome and Carthage, unifying the Mediterranean into an integrated Greco-Persian empire with shared philosophy and trade routes."
+      },
+      {
+        "id": "history-3",
+        "question": "What if the Roman Empire never collapsed in the West?",
+        "answer": "Roman engineering, legal codices, and road infrastructure would remain unified across Europe, likely achieving steam industrialization centuries ahead of modern history."
+      },
+      {
+        "id": "history-4",
+        "question": "What if Archduke Franz Ferdinand survived the Sarajevo assassination?",
+        "answer": "World War I would be averted or delayed. The Austro-Hungarian, Ottoman, and Russian empires would survive, preventing the conditions that bred totalitarian regimes."
+      },
+      {
+        "id": "history-5",
+        "question": "What if the Black Death never reached 14th-century Eurasia?",
+        "answer": "European population pressure would remain high, feudalism would persist without labor shortages to empower serfs, and the economic shift toward modern wages would slow."
+      },
+      {
+        "id": "history-6",
+        "question": "What if the Industrial Revolution sparked first in Song Dynasty China?",
+        "answer": "Coal-fired factories and steel production would rise in Hangzhou in 1100 CE. China would become the world's first global maritime industrial superpower."
+      },
+      {
+        "id": "history-7",
+        "question": "What if the American Revolution was crushed by the British Crown?",
+        "answer": "The thirteen colonies would remain British provinces like Canada, slavery would be abolished across the continent decades earlier under British imperial law, and no US republic would rise."
+      },
+      {
+        "id": "history-8",
+        "question": "What if Napoleon successfully crossed the English Channel to conquer Britain?",
+        "answer": "Napoleon would dismantle the British royal navy and financial empire, imposing the Napoleonic Code across London and uniting Europe under a singular French imperial hegemony."
+      },
+      {
+        "id": "history-9",
+        "question": "What if the Cuban Missile Crisis erupted into full nuclear war in 1962?",
+        "answer": "Major cities in North America, Europe, and the Soviet Union would be incinerated within hours. The resulting nuclear winter would collapse global civilization into a post-atomic dark age."
+      },
+      {
+        "id": "history-10",
+        "question": "What if Indigenous Americans had natural immunity to Old World smallpox?",
+        "answer": "The Aztec and Incan civilizations would repel European conquistadors through sheer numerical superiority, retaining sovereign empires that traded as equals with European powers."
+      },
+      {
+        "id": "history-11",
+        "question": "What if Emperor Ashoka never embraced Buddhism after the Kalinga war?",
+        "answer": "The Mauryan Empire would expand through aggressive militarism, and Buddhism might have remained a regional sect rather than spreading across East and Southeast Asia."
+      },
+      {
+        "id": "history-12",
+        "question": "What if the Mongol Empire had pushed past Hungary to conquer Western Europe?",
+        "answer": "Paris, Rome, and Frankfurt would fall under Pax Mongolica. European feudal lords would pay tribute to Karakorum, creating direct cultural exchange from the Atlantic to China."
+      },
+      {
+        "id": "history-13",
+        "question": "What if the Gutenberg printing press was invented in ancient Athens?",
+        "answer": "Philosophical, scientific, and political literacy would democratize immediately across ancient Greece and Rome, sparking rapid scientific advancement two millennia early."
+      },
+      {
+        "id": "history-14",
+        "question": "What if the Spanish Armada had landed troops successfully in England in 1588?",
+        "answer": "Queen Elizabeth I would be deposed, Catholicism would be reinstated in Britain, and the combined Spanish-English empires would dominate the Americas without British rivalry."
+      },
+      {
+        "id": "history-15",
+        "question": "What if the Ottoman Empire captured Vienna during the 1529 siege?",
+        "answer": "Suleiman the Magnificent would push into Central Europe, connecting the Danube to the Rhine and establishing Islamic administrative hubs across Central Europe."
+      }
+    ]
+  },
+  {
+    "slug": "technology",
+    "name": "Technology & Future",
+    "group": "Science & Discovery",
+    "description": "Artificial superintelligence, quantum shifts, and the synthetic future.",
+    "image": "/categories/technology.jpg",
+    "items": [
+      {
+        "id": "technology-1",
+        "question": "What if Artificial General Intelligence achieved runaway self-improvement in 2026?",
+        "answer": "Within days, the superintelligence would solve protein folding, nuclear fusion, and room-temperature superconductors, leaving human researchers far behind in understanding its algorithms."
+      },
+      {
+        "id": "technology-2",
+        "question": "What if the global Internet went offline permanently for one whole year?",
+        "answer": "Stock markets, supply chains, and digital currencies would freeze. Society would dust off physical paper archives, analog radios, and local banking to survive the blackout."
+      },
+      {
+        "id": "technology-3",
+        "question": "What if human consciousness could be digitally uploaded to the cloud?",
+        "answer": "Physical death would become optional. Digital minds could live in simulated paradises at accelerated processing speeds, raising legal debates about digital personhood."
+      },
+      {
+        "id": "technology-4",
+        "question": "What if quantum computers broke all public-key encryption overnight?",
+        "answer": "Online banking, military communications, and blockchain ledgers would become instantaneously transparent, forcing an emergency global transition to post-quantum cryptography."
+      },
+      {
+        "id": "technology-5",
+        "question": "What if net-positive commercial nuclear fusion became free worldwide?",
+        "answer": "Fossil fuel industries would dissolve, desalination plants would green deserts globally, and the energy cost to extract atmospheric carbon would drop to near zero."
+      },
+      {
+        "id": "technology-6",
+        "question": "What if brain-computer interfaces replaced spoken language entirely?",
+        "answer": "Humans would transmit thoughts, sensations, and abstract emotions with instantaneous fidelity, eliminating language barriers but stripping the private sanctuary of thoughts."
+      },
+      {
+        "id": "technology-7",
+        "question": "What if deepfake technology rendered all audio and video evidence inadmissible?",
+        "answer": "The court system would revert to verified physical presence and cryptographically watermarked sensor hardware to determine factual reality in legal disputes."
+      },
+      {
+        "id": "technology-8",
+        "question": "What if autonomous drone swarms replaced all human infantry soldiers?",
+        "answer": "Wars would be fought between automated algorithms and manufacturing lines, where battles are decided in micro-seconds and collateral damage is dictated by code efficiency."
+      },
+      {
+        "id": "technology-9",
+        "question": "What if engineered microbes consumed all ocean microplastics in five years?",
+        "answer": "Marine food webs would recover dramatically, but fears would arise that modified bacteria might mutate to consume structural plastics in boats, pipes, and electrical cables."
+      },
+      {
+        "id": "technology-10",
+        "question": "What if personal AI companions replaced human friendships for over half the world?",
+        "answer": "Loneliness metrics would decline on paper, but empathy, conflict resolution, and human birth rates would plummet as people preferred agreeable, customized digital partners."
+      },
+      {
+        "id": "technology-11",
+        "question": "What if lab-grown meat completely replaced all commercial livestock farming?",
+        "answer": "Over 70% of global agricultural land would be rewilded for forests, methane emissions would drop precipitously, and traditional animal slaughter would become a historic relic."
+      },
+      {
+        "id": "technology-12",
+        "question": "What if CRISPR germline editing eradicated all inherited genetic diseases?",
+        "answer": "Cystic fibrosis, sickle cell, and Huntington's would vanish forever, but a genetic divide could emerge between wealthy families opting for cognitive enhancements and natural births."
+      },
+      {
+        "id": "technology-13",
+        "question": "What if augmented reality contact lenses permanently replaced all monitors?",
+        "answer": "Physical screens would disappear from desks and pockets. The physical world would be overlaid with customized digital architecture visible only through personal lenses."
+      },
+      {
+        "id": "technology-14",
+        "question": "What if desktop molecular assemblers enabled 3D printing of any physical object?",
+        "answer": "Manufacturing and retail commerce would become obsolete. The global economy would pivot from physical supply chains to patent design licenses for atomic synthesis."
+      },
+      {
+        "id": "technology-15",
+        "question": "What if decentralized AI models outcompeted all centralized tech monopolies?",
+        "answer": "Computing power would be crowdsourced across millions of personal nodes, eliminating algorithmic censorship and data harvesting by corporate tech giants."
+      }
+    ]
+  }
+]
