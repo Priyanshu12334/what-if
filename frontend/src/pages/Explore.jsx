@@ -1,8 +1,11 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import api from '../api/axios';
+import { fetchCachedData, getCachedData } from '../api/memoryCache';
 import Skeleton from '../components/Skeleton';
 import CATEGORY_IMAGES from '../data/categoryImages';
+
+const categoriesCacheKey = 'categories';
 
 const CategoryCard = ({ cat }) => {
   const [imageFailed, setImageFailed] = useState(false);
@@ -60,8 +63,8 @@ const CategoryCard = ({ cat }) => {
 };
 
 const Explore = () => {
-  const [categories, setCategories] = useState([]);
-  const [loading, setLoading] = useState(true);
+  const [categories, setCategories] = useState(() => getCachedData(categoriesCacheKey) || []);
+  const [loading, setLoading] = useState(() => getCachedData(categoriesCacheKey) === undefined);
   const [error, setError] = useState('');
   const [searchQuery, setSearchQuery] = useState('');
   const [activeGroup, setActiveGroup] = useState('All');
@@ -76,9 +79,12 @@ const Explore = () => {
 
   const fetchCategories = async () => {
     try {
-      setLoading(true);
+      if (getCachedData(categoriesCacheKey) === undefined) setLoading(true);
       setError('');
-      const { data } = await api.get('/categories');
+      const data = await fetchCachedData(
+        categoriesCacheKey,
+        async () => (await api.get('/categories')).data
+      );
       setCategories(data);
     } catch (err) {
       setError(err.response?.data?.message || 'Could not load categories. Please try again.');
