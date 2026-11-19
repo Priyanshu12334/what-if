@@ -84,7 +84,7 @@ const History = () => {
             type="button"
             onClick={() => setShowClearConfirm(true)}
             disabled={clearing}
-            className="shrink-0 whitespace-nowrap font-mono text-xs uppercase tracking-widest text-red-400 hover:text-red-300 disabled:opacity-50"
+            className="shrink-0 whitespace-nowrap font-mono text-xs uppercase tracking-widest text-[#F06469] hover:text-[#D94B52] focus:text-[#ee6a6e] transition-colors duration-200 disabled:opacity-50"
           >
             {clearing ? 'Clearing…' : 'Clear All'}
           </button>
@@ -101,7 +101,7 @@ const History = () => {
               <button type="button" onClick={() => setShowClearConfirm(false)} className="border border-white/[0.08] px-5 py-2.5 font-body text-xs font-semibold uppercase tracking-widest text-[#F5F5F5] transition hover:border-white/[0.08]">
                 Cancel
               </button>
-              <button type="button" onClick={() => { setShowClearConfirm(false); clearAll(); }} className="bg-[#e10e0e] px-5 py-2.5 font-body text-xs font-semibold uppercase tracking-widest text-white transition hover:bg-[#ff1717]" disabled={clearing}>
+              <button type="button" onClick={() => { setShowClearConfirm(false); clearAll(); }} className="bg-[#e5484d] px-5 py-2.5 font-body text-xs font-semibold uppercase tracking-widest text-[#ffffff] transition-colors duration-200 hover:bg-[#e64046] focus:bg-[#e64046]" disabled={clearing}>
                 Clear All
               </button>
             </div>
