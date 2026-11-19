@@ -143,6 +143,10 @@ select {
   background: radial-gradient(ellipse at 40% 45%, rgba(116, 68, 17, 0.12), rgba(75, 43, 8, 0.055) 42%, transparent 76%);
 }
 
+.contact-page h1::before {
+  content: none;
+}
+
 .category-card-gradient {
   background-image:
     radial-gradient(ellipse 90% 120% at 8% 0%, rgba(113, 62, 14, 0.09), transparent 70%),

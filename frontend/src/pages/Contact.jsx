@@ -40,7 +40,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="auth-form-gradient mx-auto max-w-6xl px-6 py-14 sm:py-20">
+    <div className="contact-page mx-auto max-w-6xl px-6 py-14 sm:py-20">
       <header className="mb-10 pb-8 sm:mb-12">
         <p className="mb-3 font-mono text-xs uppercase tracking-widest text-[#f2a93b]">CONTACT</p>
         <h1 className="font-heading page-title font-bold text-[#F5F5F5]">Get in Touch</h1>
@@ -96,7 +96,7 @@ const Contact = () => {
           </form>
         </section>
 
-        <section className="h-fit border border-white/[0.08] p-5 sm:p-8">
+        <section className="h-fit border border-white/[0.08] bg-[#0D0D0D] p-5 sm:p-8">
           <h2 className="font-heading text-xl font-bold text-[#F5F5F5]">About the Creator</h2>
           <p className="mt-2 font-body text-sm text-[#A1A1AA]">Priyanshu Suyal</p>
           <div className="mt-7 space-y-4">

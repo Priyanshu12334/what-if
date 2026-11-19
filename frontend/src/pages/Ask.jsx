@@ -3,10 +3,14 @@ import { useSearchParams } from 'react-router-dom';
 import api from '../api/axios';
 import { clearCachedData } from '../api/memoryCache';
 import { useAuth } from '../context/AuthContext';
+import { useLimit } from '../context/LimitContext';
 import AiAnswerCards from '../components/AiAnswerCards';
+import Skeleton from '../components/Skeleton';
 
 const Ask = () => {
   const { user } = useAuth();
+  const { quota, isValidated, unavailable, updateFromAskResponse } = useLimit();
+  const remaining = quota?.remaining ?? null;
   const historyCacheKey = `history:${user?.id || 'current'}`;
   const [searchParams] = useSearchParams();
   const inputRef = useRef(null);
@@ -14,14 +18,10 @@ const Ask = () => {
   const [prefixWidth, setPrefixWidth] = useState(0);
   const autoSubmittedQuestion = useRef(null);
   const [userText, setUserText] = useState('');
+  const [lastQuestion, setLastQuestion] = useState('');
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
   const [result, setResult] = useState(null);
-  const [remaining, setRemaining] = useState(10);
-
-  useEffect(() => {
-    checkRemaining();
-  }, []);
 
   useEffect(() => {
     const updatePrefix = () => {
@@ -59,25 +59,22 @@ const Ask = () => {
         submitQuestion(cleaned);
       }
     }
-  }, [searchParams]);
-
-  const checkRemaining = async () => {
-    try {
-      const { data } = await api.get('/ask/history');
-      const todayStr = new Date().toISOString().split('T')[0];
-      const todayCount = data.filter(item => item.createdAt && item.createdAt.startsWith(todayStr)).length;
-      setRemaining(Math.max(0, 10 - todayCount));
-    } catch {
-      setRemaining(10);
-    }
-  };
+  }, [searchParams, isValidated]);
 
   const submitQuestion = async (question) => {
     const trimmed = question.trim();
-    if (!trimmed) return;
+    if (!trimmed || !isValidated) return;
+    const questionText = trimmed.replace(/^what\s*if\b\s*/i, '').trim();
     const fullPrompt = /^what\s*if\b/i.test(trimmed) ? trimmed : `What if ${trimmed}`;
     if (fullPrompt.length > 200) return;
 
+    setLastQuestion(questionText);
+    setUserText('');
+    if (inputRef.current) {
+      inputRef.current.style.height = `${window.matchMedia('(min-width: 768px)').matches ? 120 : 52}px`;
+      inputRef.current.style.overflowY = 'hidden';
+      inputRef.current.focus();
+    }
     setLoading(true);
     setError('');
     setResult(null);
@@ -86,9 +83,11 @@ const Ask = () => {
       const { data } = await api.post('/ask', { prompt: fullPrompt });
       clearCachedData(historyCacheKey);
       setResult(data.aiReply);
-      setRemaining(prev => Math.max(0, prev - 1));
+      updateFromAskResponse(data);
     } catch (err) {
-      setError(err.response?.data?.error || 'Something went wrong. Please try again.');
+      updateFromAskResponse(err.response?.data);
+      setUserText(questionText);
+      setError(err.response?.data?.error || err.response?.data?.message || err.message || 'Something went wrong. Please try again.');
     } finally {
       setLoading(false);
     }
@@ -122,8 +121,8 @@ const Ask = () => {
             Ask your own what-if
           </h1>
         </div>
-        <div className="font-mono text-xs text-[#A1A1AA] tracking-widest uppercase">
-          {remaining === 0 ? 'Daily limit reached. Come back tomorrow.' : <><span className="text-[#f2a93b]">{remaining}</span> {remaining === 1 ? 'what-if' : 'what-ifs'} left today</>}
+        <div className="font-mono text-xs text-[#A1A1AA]">
+          {unavailable ? 'Limit unavailable' : remaining === null ? <div className="h-3 w-44 animate-pulse bg-white/10" /> : remaining === 0 ? 'Daily limit reached. Come back tomorrow.' : <><span className="text-[#f2a93b]">{remaining}</span> {remaining === 1 ? 'what-if' : 'what-ifs'} left today</>}
         </div>
       </div>
 
@@ -165,16 +164,28 @@ const Ask = () => {
 
         <button
           type="submit"
-          disabled={loading || !userText.trim() || remaining === 0}
-          className={`mt-6 bg-[#f2a93b] hover:bg-[#d9922b] text-[#000000] font-body text-xs uppercase tracking-widest font-semibold py-3.5 px-6 transition disabled:opacity-50 ${loading || !userText.trim() || remaining === 0 ? 'cursor-not-allowed' : 'cursor-pointer'}`}
+          disabled={loading || !userText.trim() || !isValidated || remaining === 0}
+          className={`mt-6 bg-[#f2a93b] hover:bg-[#d9922b] text-[#000000] font-body text-xs uppercase tracking-widest font-semibold py-3.5 px-6 transition disabled:opacity-50 ${loading || !userText.trim() || !isValidated || remaining === 0 ? 'cursor-not-allowed' : 'cursor-pointer'}`}
         >
           {loading ? 'Asking…' : remaining === 0 ? 'Daily limit reached' : 'Ask'}
         </button>
       </form>
 
-      {result && (
-        <div className="pt-6">
-          <AiAnswerCards reply={result} />
+      {lastQuestion && (
+        <div className="mt-10">
+          <p className="mb-2 font-mono text-[11px] uppercase tracking-widest text-[#A1A1AA]">
+            YOU ASKED
+          </p>
+          <h2 className="mb-5 line-clamp-3 break-words font-body text-base font-medium leading-snug text-[#F5F5F5] md:text-xl">
+            What if {lastQuestion}
+          </h2>
+          {loading ? (
+            <Skeleton className="h-24 w-full" />
+          ) : result && (
+            <div>
+              <AiAnswerCards reply={result} />
+            </div>
+          )}
         </div>
       )}
     </div>

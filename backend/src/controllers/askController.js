@@ -14,12 +14,34 @@ const getDateKey = (date = new Date()) => {
   return `${parts.year}-${parts.month}-${parts.day}`;
 };
 
+const ensureUsage = async (user, dateKey) => {
+  let usage = await AskUsage.findOne({ user, dateKey }).select('count').lean();
+  if (usage) return usage;
+
+  const start = new Date(`${dateKey}T00:00:00+05:30`);
+  const count = await Answer.countDocuments({
+    user,
+    question: null,
+    createdAt: { $gte: start, $lt: new Date(start.getTime() + 24 * 60 * 60 * 1000) }
+  });
+
+  try {
+    return await AskUsage.create({ user, dateKey, count });
+  } catch (err) {
+    if (err.code !== 11000) throw err;
+    usage = await AskUsage.findOne({ user, dateKey }).select('count').lean();
+    if (!usage) throw err;
+    return usage;
+  }
+};
+
 const getRemaining = async (user, dateKey) => {
-  const usage = await AskUsage.findOne({ user, dateKey }).select('count').lean();
+  const usage = await ensureUsage(user, dateKey);
   return Math.max(0, DAILY_LIMIT - (usage?.count || 0));
 };
 
 const reserveSlot = async (user, dateKey) => {
+  await ensureUsage(user, dateKey);
   for (let attempt = 0; attempt < 2; attempt += 1) {
     try {
       return await AskUsage.findOneAndUpdate(
@@ -49,7 +71,10 @@ const refundSlot = async (user, dateKey) => {
 
 export const getAskLimit = async (req, res) => {
   try {
-    const remaining = await getRemaining(req.user.id, getDateKey());
+    const usage = await AskUsage.findOne({ user: req.user.id, dateKey: getDateKey() })
+      .select('count')
+      .lean();
+    const remaining = Math.max(0, DAILY_LIMIT - (usage?.count || 0));
     res.json({ remaining, limit: DAILY_LIMIT });
   } catch (err) {
     res.status(500).json({ error: err.message });

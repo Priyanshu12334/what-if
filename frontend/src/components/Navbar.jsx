@@ -220,7 +220,7 @@ const Navbar = () => {
               <button
                 type="button"
                 onClick={confirmLogout}
-                className="bg-[#e10e0e] hover:bg-[#ff1717] text-white px-5 py-2.5 font-body text-xs uppercase tracking-widest font-semibold transition cursor-pointer"
+                className="bg-[#e5484d] hover:bg-[#e64046] text-white px-5 py-2.5 font-body text-xs uppercase tracking-widest font-semibold transition cursor-pointer"
               >
                 Yes, Logout
               </button>

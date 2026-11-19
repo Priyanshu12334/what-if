@@ -66,7 +66,7 @@ const Register = () => {
         Create your account
       </h1>
       <p className="font-body text-sm text-[#A1A1AA] mb-6 text-center">
-        Join to vote on daily dilemmas and explore what-ifs.
+        Join to vote on daily dilemmas and explore what-if scenarios.
       </p>
 
       <form onSubmit={handleSubmit} className="space-y-4">

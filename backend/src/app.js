@@ -15,6 +15,10 @@ app.use(cors({
 }));
 app.use(express.json());
 
+app.get('/api/health', (req, res) => {
+  res.json({ ok: true });
+});
+
 app.use('/api/auth', authRoutes);
 app.use('/api/daily', dailyRoutes);
 app.use('/api/ask', askRoutes);

@@ -37,7 +37,7 @@ const Login = () => {
     <AuthLayout
       badge="WELCOME BACK"
       headline="Your universes await."
-      subtext="Log in to vote, keep your streak alive and compare your what-ifs with real users."
+      subtext="Log in to vote, keep your streak alive and compare your what-if questions with real users."
     >
       <h1 className="font-heading text-3xl font-bold text-[#F5F5F5] mb-2 text-center">
         Welcome back

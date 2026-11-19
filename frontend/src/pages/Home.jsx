@@ -126,7 +126,7 @@ const Home = () => {
                 STREAK: {streak} {streak === 1 ? 'DAY' : 'DAYS'}
               </span>
             </div>
-            <h1 className="font-serif page-title font-bold leading-tight text-[#F5F5F5]">
+            <h1 className="font-heading page-title font-bold text-[#F5F5F5]">
               {poll?.question || 'No daily question available'}
             </h1>
             <p className="font-body text-sm text-[#A1A1AA] mt-4">
