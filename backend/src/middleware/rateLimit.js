@@ -12,11 +12,11 @@ const authRateLimit = () => rateLimit({
 export const loginRateLimiter = authRateLimit();
 export const registerRateLimiter = authRateLimit();
 
-export const askRateLimiter = rateLimit({
-  windowMs: 24 * 60 * 60 * 1000,
-  max: 10,
-  keyGenerator: (req) => req.user?.id || req.ip,
-  message: { error: 'Daily limit reached. Try again tomorrow.' },
+export const askBurstRateLimiter = rateLimit({
+  windowMs: 60 * 1000,
+  limit: 5,
+  keyGenerator: (req) => req.user.id,
+  message: { code: 'TOO_FAST', message: 'Too many requests. Please wait a few seconds.' },
   standardHeaders: true,
   legacyHeaders: false
 });

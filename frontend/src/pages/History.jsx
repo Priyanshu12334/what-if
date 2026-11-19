@@ -149,7 +149,7 @@ const History = () => {
                     className="min-w-0 flex-1 text-left focus:outline-none focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#f2a93b] rounded-none cursor-pointer"
                   >
                     <div className="min-w-0 flex-1">
-                      <h3 className="font-heading text-lg md:text-[22px] font-bold text-[#F5F5F5] transition">
+                      <h3 className="font-heading text-base md:text-xl font-bold text-[#F5F5F5] transition">
                         {item.prompt}
                       </h3>
                       <span className="font-mono text-xs text-[#A1A1AA] mt-2 block tracking-widest">

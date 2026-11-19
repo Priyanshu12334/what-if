@@ -1,10 +1,55 @@
-const SYSTEM_PROMPT = 'Reply in the same language and script as the user’s question. English questions get English replies. Hindi written in Latin letters (Hinglish) gets natural Hinglish in Latin letters. Hindi in Devanagari gets Hindi in Devanagari. Never translate the question into another language. Return only a valid JSON object with exactly two string keys: whatMightHappen (2-3 sentences) and funFact (1 sentence). Do not include markdown, text outside the JSON, invented statistics, or invented studies. If the request is unsafe, politely refuse in the same language and script, using whatMightHappen for the refusal and a harmless funFact.';
+export const MAX_ANSWER_WORDS = 100;
+
+const SYSTEM_PROMPT = 'Answer the specific What-If question using very simple everyday words. In Hinglish avoid heavy English words (no "geopolitical", "realignment", "curricula" etc.); write the way a friend would text. Never invent factual claims, studies, statistics, characters, or numbers. For questions about a movie, anime, show, or myth, follow its established rules and canon. Return only valid JSON with exactly the key whatMightHappen, a string. whatMightHappen: MAX 100 words, written as ONE or TWO short paragraphs. No headings, no "short term / medium term / long term" sections, no lists. Start with the direct answer, explain the main reason, end with one simple example. Write in the required language and script. If the request is unsafe, politely refuse in whatMightHappen and keep the same JSON shape.';
+
+const hinglishPattern = /\b(?:kya|agar|toh|to|hota|hoga|hai|hain|nahi|nhi|jata|jaye|jaaye|kaise|kyun|kyu|mein|me|ka|ki|ke|ko|se|par|bhi|mar|gaya|gayab|karta|kare|ho|aur|tha|thi)\b/gi;
+
+export const detectQuestionLanguage = (question) => {
+  const cleanQuestion = question.replace(/^\s*what\s+if\b\s*/i, '');
+  if (/[\u0900-\u097F]/.test(cleanQuestion)) return 'Hindi in Devanagari script';
+  if ((cleanQuestion.match(hinglishPattern) || []).length >= 2) return 'Hinglish (Hindi written in English/Latin letters, casual, like a friend texting)';
+  return 'English';
+};
+
+const countWords = (text) => (text.trim().match(/\S+/g) || []).length;
+
+const truncateToLastSentence = (text, maxWords) => {
+  const matches = [...text.matchAll(/\S+/g)];
+  if (matches.length <= maxWords) return text.trim();
+  const cutoffIndex = matches[maxWords - 1].index + matches[maxWords - 1][0].length;
+  const sub = text.slice(0, cutoffIndex);
+  let lastPunctuation = Math.max(
+    sub.lastIndexOf('.'),
+    sub.lastIndexOf('!'),
+    sub.lastIndexOf('?'),
+    sub.lastIndexOf('।')
+  );
+  if (lastPunctuation >= 0) {
+    while (lastPunctuation + 1 < sub.length && /["')\]}]/.test(sub[lastPunctuation + 1])) {
+      lastPunctuation += 1;
+    }
+    return text.slice(0, lastPunctuation + 1).trim();
+  }
+  return sub.trim() + '.';
+};
 
 export const askWhatIf = async (prompt) => {
-  const keys = ['whatMightHappen', 'funFact'];
-  let lastError;
+  const keys = ['whatMightHappen'];
+  const lang = detectQuestionLanguage(prompt);
+  let jsonRetried = false;
+  let languageRetried = false;
+  let retryLanguage = false;
+  let lengthRetried = false;
+  let retryLengthInstruction = '';
 
-  for (let attempt = 0; attempt < 2; attempt += 1) {
+  while (true) {
+    const messages = [
+      { role: 'system', content: `${SYSTEM_PROMPT}\nReply language: ${lang}. Write EVERYTHING in this language only, never mix scripts or switch language.` }
+    ];
+    if (retryLanguage) messages.push({ role: 'system', content: `You used the wrong language. Reply ONLY in ${lang}.` });
+    if (retryLengthInstruction) messages.push({ role: 'system', content: retryLengthInstruction });
+    messages.push({ role: 'user', content: prompt });
+
     const res = await fetch('https://api.groq.com/openai/v1/chat/completions', {
       method: 'POST',
       headers: {
@@ -13,12 +58,9 @@ export const askWhatIf = async (prompt) => {
       },
       body: JSON.stringify({
         model: process.env.GROQ_MODEL,
-        messages: [
-          { role: 'system', content: SYSTEM_PROMPT },
-          { role: 'user', content: prompt }
-        ],
+        messages,
         temperature: 0.8,
-        max_completion_tokens: 800,
+        max_completion_tokens: 600,
         reasoning_effort: 'low'
       })
     });
@@ -30,6 +72,7 @@ export const askWhatIf = async (prompt) => {
 
     const data = await res.json();
     const content = data.choices?.[0]?.message?.content || '';
+    let reply;
     try {
       const start = content.indexOf('{');
       const end = content.lastIndexOf('}');
@@ -41,13 +84,34 @@ export const askWhatIf = async (prompt) => {
         Object.keys(parsed).length !== keys.length ||
         keys.some((key) => typeof parsed[key] !== 'string' || !parsed[key].trim())
       ) throw new Error('Reply did not match the required answer shape.');
-      return Object.fromEntries(keys.map((key) => [key, parsed[key].trim()]));
+      reply = Object.fromEntries(keys.map((key) => [key, parsed[key].trim()]));
     } catch (error) {
-      lastError = error;
+      if (jsonRetried) throw error;
+      jsonRetried = true;
+      continue;
     }
-  }
 
-  throw lastError;
+    const hasDevanagari = /[\u0900-\u097F]/.test(reply.whatMightHappen);
+    const isHindi = lang === 'Hindi in Devanagari script';
+    if (hasDevanagari !== isHindi && !languageRetried) {
+      languageRetried = true;
+      retryLanguage = true;
+      continue;
+    }
+
+    const answerWords = countWords(reply.whatMightHappen);
+    if (answerWords > 110 && !lengthRetried) {
+      lengthRetried = true;
+      retryLengthInstruction = 'Too long. Rewrite in under 100 words.';
+      continue;
+    }
+
+    if (countWords(reply.whatMightHappen) > 110) {
+      reply.whatMightHappen = truncateToLastSentence(reply.whatMightHappen, 110);
+    }
+
+    return reply;
+  }
 };
 
 export const generateDaily = async (questionText) => {

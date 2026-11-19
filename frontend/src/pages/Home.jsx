@@ -4,24 +4,6 @@ import { fetchCachedData, getCachedData, setCachedData } from '../api/memoryCach
 import { useAuth } from '../context/AuthContext';
 import Skeleton from '../components/Skeleton';
 
-const TAGLINES = [
-  'Think it through',
-  'Pick your side',
-  'Curious today?',
-  'Trust your gut',
-  'Imagine freely',
-  'One question, one pick',
-  'Make your guess',
-  'Ready to wonder?'
-];
-
-const getDayOfYear = () => {
-  const now = new Date();
-  const start = new Date(now.getFullYear(), 0, 0);
-  const diff = now - start;
-  return Math.floor(diff / (1000 * 60 * 60 * 24));
-};
-
 const getPercentages = (counts) => {
   const total = counts.reduce((sum, count) => sum + count, 0);
   if (!total) return counts.map(() => 0);
@@ -45,8 +27,6 @@ const Home = () => {
   const [loading, setLoading] = useState(() => getCachedData(cacheKey) === undefined);
   const [voting, setVoting] = useState(false);
   const [error, setError] = useState('');
-
-  const tagline = TAGLINES[getDayOfYear() % TAGLINES.length];
 
   useEffect(() => {
     loadPoll();
@@ -112,16 +92,11 @@ const Home = () => {
 
   return (
     <div className="max-w-5xl mx-auto px-6 py-16">
-      <div className="pb-8 mb-8">
+      <div className={poll && !loading ? 'pb-0 mb-0' : 'pb-8 mb-8'}>
         <div className="flex items-center justify-between gap-3">
-          <div className="flex min-w-0 items-center gap-3">
-            <span className="min-w-0 truncate font-heading text-lg text-[#F5F5F5]">
-              {user?.name?.trim() ? `Hi, ${user.name.trim()}` : 'Hi'}
-            </span>
-            <span className="hidden sm:inline shrink-0 text-right font-mono text-xs uppercase tracking-widest text-[#A1A1AA]">
-              {tagline}
-            </span>
-          </div>
+          <span className="min-w-0 truncate font-heading text-lg text-[#F5F5F5]">
+            {user?.name?.trim() ? `Hi, ${user.name.trim()}` : 'Hi'}
+          </span>
           {!loading && (
             <span className="sm:hidden shrink-0 whitespace-nowrap border border-white/[0.08] px-2.5 py-1 font-mono text-[11px] uppercase tracking-widest">
               <span className="text-[#A1A1AA]">STREAK</span>{' '}
@@ -155,7 +130,7 @@ const Home = () => {
               {poll?.question || 'No daily question available'}
             </h1>
             <p className="font-body text-sm text-[#A1A1AA] mt-4">
-              One question for everyone, every day. Pick what you think would happen.
+              One question for everyone, every day. Pick your answer to see the explanation.
             </p>
           </>
         )}
@@ -176,9 +151,8 @@ const Home = () => {
           <Skeleton className="h-14 w-full border border-white/[0.08]" />
         </div>
       ) : poll && (
-        <div className="space-y-8">
+        <div className="mt-6">
           <section>
-            <p className="mb-3 font-body text-xs text-[#A1A1AA]">Choose what you think would happen, then see the explanation.</p>
             <div className="space-y-3">
               {poll.options.map((option, index) => (
                 <button

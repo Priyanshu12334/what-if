@@ -15,6 +15,18 @@ const Navbar = () => {
   }, [pathname]);
 
   useEffect(() => {
+    if (!mobileMenuOpen) return;
+    const previousBodyOverflow = document.body.style.overflow;
+    const previousHtmlOverflow = document.documentElement.style.overflow;
+    document.body.style.overflow = 'hidden';
+    document.documentElement.style.overflow = 'hidden';
+    return () => {
+      document.body.style.overflow = previousBodyOverflow;
+      document.documentElement.style.overflow = previousHtmlOverflow;
+    };
+  }, [mobileMenuOpen]);
+
+  useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 8);
     window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
@@ -22,13 +34,14 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleKeyDown = (e) => {
-      if (e.key === 'Escape' && showLogoutModal) {
-        setShowLogoutModal(false);
+      if (e.key === 'Escape') {
+        if (showLogoutModal) setShowLogoutModal(false);
+        if (mobileMenuOpen) setMobileMenuOpen(false);
       }
     };
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [showLogoutModal]);
+  }, [showLogoutModal, mobileMenuOpen]);
 
   if (pathname === '/login' || pathname === '/register') {
     return null;
@@ -48,7 +61,7 @@ const Navbar = () => {
     }`;
 
   const mobileNavLinkClass = (path) =>
-    `font-mono text-xs uppercase tracking-widest py-2 transition block ${
+    `font-mono text-sm uppercase tracking-widest py-4 text-center transition block ${
       pathname === path
         ? 'text-[#f2a93b]'
         : 'text-[#A1A1AA] hover:text-[#F5F5F5]'
@@ -57,7 +70,7 @@ const Navbar = () => {
   return (
     <>
       <nav
-        className={`sticky top-0 z-50 border-b bg-[#000000]/85 backdrop-blur-md ${scrolled ? 'border-white/[0.06]' : 'border-transparent'}`}
+        className={`sticky top-0 z-50 h-16 border-b bg-[#000000]/85 backdrop-blur-md ${scrolled ? 'border-white/[0.06]' : 'border-transparent'}`}
       >
         <div className="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
           <Link
@@ -99,16 +112,12 @@ const Navbar = () => {
               <button
                 type="button"
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                className="sm:hidden flex h-8 w-8 items-center justify-center bg-transparent text-[#A1A1AA] hover:text-[#F5F5F5] transition cursor-pointer"
+                className="sm:hidden relative flex h-8 w-8 items-center justify-center bg-transparent text-[#A1A1AA] hover:text-[#F5F5F5] transition cursor-pointer"
                 aria-label={mobileMenuOpen ? 'Close menu' : 'Open menu'}
                 aria-expanded={mobileMenuOpen}
               >
-                <span
-                  aria-hidden="true"
-                  className={`inline-block transition-transform duration-300 ease-in-out ${mobileMenuOpen ? 'rotate-90' : 'rotate-0'}`}
-                >
-                  {mobileMenuOpen ? '✕' : '☰'}
-                </span>
+                <span aria-hidden="true" className={`absolute left-1/2 top-1/2 h-px w-[18px] -translate-x-1/2 bg-current transition-transform duration-[400ms] ease-[cubic-bezier(0.22,1,0.36,1)] motion-reduce:transition-none ${mobileMenuOpen ? 'translate-y-0 rotate-45' : '-translate-y-1'}`} />
+                <span aria-hidden="true" className={`absolute left-1/2 top-1/2 h-px w-[18px] -translate-x-1/2 bg-current transition-transform duration-[400ms] ease-[cubic-bezier(0.22,1,0.36,1)] motion-reduce:transition-none ${mobileMenuOpen ? 'translate-y-0 -rotate-45' : 'translate-y-1'}`} />
               </button>
             </>
           ) : (
@@ -129,63 +138,58 @@ const Navbar = () => {
           )}
         </div>
 
-        {/* Mobile Dropdown Menu (Logged in) */}
-        {user && (
+      </nav>
+
+      {user && (
+        <>
+          <button
+            type="button"
+            aria-label="Close menu"
+            tabIndex={mobileMenuOpen ? 0 : -1}
+            onClick={() => setMobileMenuOpen(false)}
+            className={`fixed inset-0 z-30 bg-transparent sm:hidden ${mobileMenuOpen ? 'pointer-events-auto' : 'pointer-events-none'}`}
+          />
           <div
             aria-hidden={!mobileMenuOpen}
-            inert={!mobileMenuOpen}
-            className={`sm:hidden overflow-hidden bg-[#000000]/95 px-6 flex flex-col gap-2 transition-[max-height,opacity] duration-300 ease-in-out ${mobileMenuOpen ? 'max-h-96 opacity-100 border-t border-white/[0.08] py-4' : 'max-h-0 opacity-0 py-0 pointer-events-none'}`}
+            inert={!mobileMenuOpen ? '' : undefined}
+            data-open={mobileMenuOpen}
+            className={`mobile-menu fixed inset-0 z-40 flex h-[100dvh] w-screen flex-col overflow-hidden bg-[#000000] px-6 pb-[max(1.5rem,env(safe-area-inset-bottom))] pt-[calc(4rem+env(safe-area-inset-top))] sm:hidden motion-reduce:transform-none ${mobileMenuOpen ? 'translate-x-0 opacity-100 visible pointer-events-auto' : 'translate-x-full opacity-0 invisible pointer-events-none'}`}
           >
-            <Link
-              to="/daily"
-              onClick={() => setMobileMenuOpen(false)}
-              className={mobileNavLinkClass('/daily')}
-            >
-              Daily
-            </Link>
-            <Link
-              to="/categories"
-              onClick={() => setMobileMenuOpen(false)}
-              className={mobileNavLinkClass('/categories')}
-            >
-              Categories
-            </Link>
-            <Link
-              to="/ask"
-              onClick={() => setMobileMenuOpen(false)}
-              className={mobileNavLinkClass('/ask')}
-            >
-              Ask
-            </Link>
-            <Link
-              to="/history"
-              onClick={() => setMobileMenuOpen(false)}
-              className={mobileNavLinkClass('/history')}
-            >
-              Recent
-            </Link>
-            <Link
-              to="/contact"
-              onClick={() => setMobileMenuOpen(false)}
-              className={mobileNavLinkClass('/contact')}
-            >
-              Contact
-            </Link>
-            <div className="border-t border-white/[0.08] pt-3 mt-2">
+            <div className="min-h-0 flex-1 overflow-y-auto overscroll-contain">
+              <div className="flex min-h-full flex-col items-center justify-center gap-2">
+                {[
+                  ['/daily', 'Daily'],
+                  ['/categories', 'Categories'],
+                  ['/ask', 'Ask'],
+                  ['/history', 'Recent'],
+                  ['/contact', 'Contact']
+                ].map(([path, label]) => (
+                  <Link
+                    key={path}
+                    to={path}
+                    onClick={() => setMobileMenuOpen(false)}
+                    className={`${mobileNavLinkClass(path)} w-full max-w-sm`}
+                  >
+                    {label}
+                  </Link>
+                ))}
+              </div>
+            </div>
+            <div className="mt-auto border-t border-white/[0.08] pt-4">
               <button
                 type="button"
                 onClick={() => {
                   setMobileMenuOpen(false);
                   setShowLogoutModal(true);
                 }}
-                className="font-mono text-xs uppercase tracking-widest text-red-400/80 hover:text-red-400 transition cursor-pointer py-1 block w-full text-left"
+                className="block w-full py-4 text-center font-mono text-sm uppercase tracking-widest text-red-400/80 transition hover:text-red-400"
               >
                 Logout
               </button>
             </div>
           </div>
-        )}
-      </nav>
+        </>
+      )}
 
       {/* Logout Confirmation Modal */}
       {showLogoutModal && (

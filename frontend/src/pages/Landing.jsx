@@ -173,36 +173,44 @@ const Landing = () => {
         </div>
       </section>
 
-      <footer className="w-full bg-[#000000] text-left md:text-center">
-        <div className="mx-auto flex w-full max-w-6xl flex-col items-start px-4 py-8 sm:px-6 sm:py-10 md:items-center">
-          <div className="grid w-full max-w-3xl grid-cols-1 gap-y-6 md:grid-cols-2 md:items-center md:gap-y-0">
-            <div className="flex min-w-0 flex-col items-start gap-2 pb-0 md:items-center md:pr-10 md:text-center">
-              <Link to="/" className="inline-flex items-center gap-2 font-heading text-base font-bold tracking-tight text-[#F5F5F5] transition hover:text-[#f2a93b] sm:text-lg">
+      <footer className="w-full bg-[#000000] text-left">
+        <div className="mx-auto w-full max-w-6xl px-6 py-10 sm:py-12">
+          <div className="grid grid-cols-2 gap-x-5 gap-y-8 md:grid-cols-[2fr_1fr_1fr] md:gap-8">
+            <div className="col-span-2 flex min-w-0 flex-col items-start gap-2 md:col-span-1">
+              <Link to="/" className="inline-flex min-h-10 items-center font-heading text-base font-bold tracking-tight sm:text-lg">
                 <span><span className="text-[#FFFFFF]">WHAT</span><span className="text-[#f2a93b]"> IF?</span></span>
               </Link>
-              <p className="mt-2 w-full max-w-xs font-body text-xs leading-relaxed text-[#A1A1AA] sm:text-sm md:text-center">
-                Ask a what-if. See where it leads.
-              </p>
+              <p className="font-body text-sm leading-relaxed text-[#A1A1AA]">Ask a what-if. See where it leads.</p>
             </div>
-
-            <div className="flex min-w-0 flex-col items-start pt-5 md:items-center md:pl-10 md:pt-0 md:text-center">
-              <h2 className="mb-3 font-mono text-[10px] uppercase tracking-widest text-[#A1A1AA] sm:text-[11px]">Social</h2>
-              <div className="flex flex-col items-start gap-2.5 md:items-center">
-                <a href="https://github.com/Priyanshu12334" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 font-body text-xs text-[#A1A1AA] transition hover:text-[#f2a93b] sm:text-sm">
-                  <svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor" className="h-3.5 w-3.5 sm:h-4 sm:w-4"><path d="M12 .9a11.1 11.1 0 0 0-3.5 21.6c.6.1.8-.3.8-.6v-2.1c-3.1.7-3.8-1.3-3.8-1.3-.5-1.3-1.2-1.6-1.2-1.6-1-.7.1-.7.1-.7 1.1.1 1.7 1.1 1.7 1.1 1 .1.8 2.5 4.1 1.8.1-.8.4-1.3.7-1.6-2.5-.3-5.1-1.3-5.1-5.5 0-1.2.4-2.2 1.1-3-.1-.3-.5-1.5.1-3.1 0 0 .9-.3 3.1 1.1a10.7 10.7 0 0 1 5.7 0c2.2-1.4 3.1-1.1 3.1-1.1.6 1.6.2 2.8.1 3.1.7.8 1.1 1.8 1.1 3 0 4.2-2.6 5.1-5.1 5.4.4.3.8 1 .8 2v3c0 .3.2.7.8.6A11.1 11.1 0 0 0 12 .9Z" /></svg>
+            <div className="flex min-w-0 flex-col items-start">
+              <h2 className="mb-2 font-mono text-xs uppercase tracking-widest text-[#A1A1AA]">EXPLORE</h2>
+              <div className="flex flex-col items-start">
+                <Link to="/contact" className="inline-flex min-h-10 items-center font-body text-sm text-[#A1A1AA] hover:underline">Contact</Link>
+                <Link to="/login" className="inline-flex min-h-10 items-center font-body text-sm text-[#A1A1AA] hover:underline">Login</Link>
+                <Link to="/register" className="inline-flex min-h-10 items-center font-body text-sm text-[#A1A1AA] hover:underline">Register</Link>
+              </div>
+            </div>
+            <div className="flex min-w-0 flex-col items-start">
+              <h2 className="mb-2 font-mono text-xs uppercase tracking-widest text-[#A1A1AA]">SOCIAL</h2>
+              <div className="flex flex-col items-start">
+                <a href="https://github.com/Priyanshu12334" target="_blank" rel="noopener noreferrer" className="inline-flex min-h-10 items-center gap-3 font-body text-sm text-[#A1A1AA] hover:underline">
+                  <svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor" className="h-4 w-4"><path d="M12 .9a11.1 11.1 0 0 0-3.5 21.6c.6.1.8-.3.8-.6v-2.1c-3.1.7-3.8-1.3-3.8-1.3-.5-1.3-1.2-1.6-1.2-1.6-1-.7.1-.7.1-.7 1.1.1 1.7 1.1 1.7 1.1 1 .1.8 2.5 4.1 1.8.1-.8.4-1.3.7-1.6-2.5-.3-5.1-1.3-5.1-5.5 0-1.2.4-2.2 1.1-3-.1-.3-.5-1.5.1-3.1 0 0 .9-.3 3.1 1.1a10.7 10.7 0 0 1 5.7 0c2.2-1.4 3.1-1.1 3.1-1.1.6 1.6.2 2.8.1 3.1.7.8 1.1 1.8 1.1 3 0 4.2-2.6 5.1-5.1 5.4.4.3.8 1 .8 2v3c0 .3.2.7.8.6A11.1 11.1 0 0 0 12 .9Z" /></svg>
                   GitHub
                 </a>
-                <a href="https://www.linkedin.com/in/priyanshu-suyal-5732b224a" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 font-body text-xs text-[#A1A1AA] transition hover:text-[#f2a93b] sm:text-sm">
-                  <svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor" className="h-3.5 w-3.5 sm:h-4 sm:w-4"><path d="M20.4 2H3.6C2.7 2 2 2.7 2 3.6v16.8c0 .9.7 1.6 1.6 1.6h16.8c.9 0 1.6-.7 1.6-1.6V3.6c0-.9-.7-1.6-1.6-1.6ZM8 19H5V9h3v10ZM6.5 7.6a1.8 1.8 0 1 1 0-3.6 1.8 1.8 0 0 1 0 3.6ZM19 19h-3v-4.9c0-1.2 0-2.7-1.7-2.7s-2 1.3-2 2.6V19H9V9h3v1.4h.1a3.3 3.3 0 0 1 3-1.7c3.2 0 3.9 2.1 3.9 4.8V19Z" /></svg>
+                <a href="https://www.linkedin.com/in/priyanshu-suyal-5732b224a" target="_blank" rel="noopener noreferrer" className="inline-flex min-h-10 items-center gap-3 font-body text-sm text-[#A1A1AA] hover:underline">
+                  <svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor" className="h-4 w-4"><path d="M20.4 2H3.6C2.7 2 2 2.7 2 3.6v16.8c0 .9.7 1.6 1.6 1.6h16.8c.9 0 1.6-.7 1.6-1.6V3.6c0-.9-.7-1.6-1.6-1.6ZM8 19H5V9h3v10ZM6.5 7.6a1.8 1.8 0 1 1 0-3.6 1.8 1.8 0 0 1 0 3.6ZM19 19h-3v-4.9c0-1.2 0-2.7-1.7-2.7s-2 1.3-2 2.6V19H9V9h3v1.4h.1a3.3 3.3 0 0 1 3-1.7c3.2 0 3.9 2.1 3.9 4.8V19Z" /></svg>
                   LinkedIn
+                </a>
+                <a href="https://portfolio-ten-blond-87.vercel.app" target="_blank" rel="noopener noreferrer" className="inline-flex min-h-10 items-center gap-3 font-body text-sm text-[#A1A1AA] hover:underline">
+                  <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="shrink-0"><circle cx="12" cy="12" r="9" /><path d="M3 12h18M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18" /></svg>
+                  Portfolio
                 </a>
               </div>
             </div>
           </div>
-
-          <div className="mt-6 flex w-full max-w-3xl flex-col items-start gap-2 pt-4 sm:mt-8 sm:gap-3 sm:pt-5 md:items-center">
-            <p className="font-body text-[11px] text-[#A1A1AA] sm:text-xs">A product by Priyanshu Suyal</p>
-            <p className="font-body text-[11px] text-[#A1A1AA] sm:text-xs">© 2026 WHAT IF? All rights reserved.</p>
+          <div className="mt-8 flex flex-col gap-2 border-t border-white/[0.08] pt-4 md:flex-row md:items-center md:justify-between">
+            <p className="font-body text-xs text-[#A1A1AA]">A product by Priyanshu Suyal</p>
+            <p className="font-body text-xs text-[#A1A1AA]">&copy; 2026 WHAT IF? All rights reserved.</p>
           </div>
         </div>
       </footer>

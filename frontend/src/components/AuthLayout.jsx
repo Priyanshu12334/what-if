@@ -79,7 +79,7 @@ const AuthLayout = ({ children, badge, headline, subtext }) => {
         style={{ backgroundImage: 'radial-gradient(ellipse at bottom right, rgba(242,169,59,0.07), transparent 60%)' }}
         className="min-w-0 flex flex-col justify-center items-center min-h-screen lg:min-h-full bg-[#000000] px-5 py-8 lg:p-10 w-full text-left"
       >
-        <div className="lg:hidden w-full max-w-sm mb-6">
+        <div className="lg:hidden mx-auto flex w-full max-w-sm justify-center text-center mb-6">
           <Link
             to="/"
             className="font-heading text-xl font-bold tracking-tight text-[#F5F5F5]"

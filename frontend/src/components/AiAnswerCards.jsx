@@ -14,12 +14,10 @@ const AiAnswerCards = ({ reply }) => {
     }
   }
 
-  const sections = typeof answer === 'string'
-    ? [['WHAT MIGHT HAPPEN', answer]]
-    : [
-        ['WHAT MIGHT HAPPEN', answer?.whatMightHappen],
-        ['FUN FACT', answer?.funFact]
-      ].filter(([, content]) => typeof content === 'string' && content.trim());
+  const content = typeof answer === 'string' ? answer : answer?.whatMightHappen;
+  const sections = typeof content === 'string' && content.trim()
+    ? [['WHAT MIGHT HAPPEN', content]]
+    : [];
 
   return (
     <div className="space-y-4">

@@ -1,4 +1,5 @@
-import { BrowserRouter, Routes, Route, Navigate, useParams } from 'react-router-dom';
+import { useLayoutEffect } from 'react';
+import { BrowserRouter, Routes, Route, Navigate, useParams, useLocation } from 'react-router-dom';
 import { AuthProvider } from './context/AuthContext';
 import Navbar from './components/Navbar';
 import ProtectedRoute from './components/ProtectedRoute';
@@ -17,10 +18,21 @@ const LegacyCategoryRedirect = () => {
   return <Navigate to={`/categories/${slug}`} replace />;
 };
 
+const ContactScrollReset = () => {
+  const { pathname } = useLocation();
+
+  useLayoutEffect(() => {
+    if (pathname === '/contact') window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+};
+
 const App = () => {
   return (
     <BrowserRouter>
       <AuthProvider>
+        <ContactScrollReset />
         <div className="site-shell min-h-screen bg-[#000000] text-[#F5F5F5] flex flex-col font-sans overflow-x-clip w-full">
           <Navbar />
           <main className="flex-1 w-full overflow-x-clip">

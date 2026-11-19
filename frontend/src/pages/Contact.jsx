@@ -43,8 +43,8 @@ const Contact = () => {
     <div className="auth-form-gradient mx-auto max-w-6xl px-6 py-14 sm:py-20">
       <header className="mb-10 pb-8 sm:mb-12">
         <p className="mb-3 font-mono text-xs uppercase tracking-widest text-[#f2a93b]">CONTACT</p>
-        <h1 className="font-serif page-title font-bold leading-tight text-[#F5F5F5]">Get in Touch</h1>
-        <p className="mt-4 max-w-2xl font-body text-base leading-relaxed text-[#A1A1AA]">
+        <h1 className="font-heading page-title font-bold text-[#F5F5F5]">Get in Touch</h1>
+        <p className="font-body text-sm text-[#A1A1AA] mt-3 max-w-2xl">
           Have feedback, suggestions, or found a bug? I&apos;d love to hear from you.
         </p>
       </header>
@@ -97,12 +97,19 @@ const Contact = () => {
         </section>
 
         <section className="h-fit border border-white/[0.08] p-5 sm:p-8">
-          <h2 className="font-serif text-2xl font-bold text-[#F5F5F5]">About the Creator</h2>
+          <h2 className="font-heading text-xl font-bold text-[#F5F5F5]">About the Creator</h2>
           <p className="mt-2 font-body text-sm text-[#A1A1AA]">Priyanshu Suyal</p>
           <div className="mt-7 space-y-4">
             <a href="mailto:suyalpriyanshu2@gmail.com" className="flex items-center gap-3 font-body text-sm text-[#F5F5F5]/75 transition hover:text-[#f2a93b]">
               <ContactIcon><rect x="3" y="5" width="18" height="14" rx="2" /><path d="m3 7 9 6 9-6" /></ContactIcon>
               <span className="break-all">suyalpriyanshu2@gmail.com</span>
+            </a>
+            <a href="https://portfolio-ten-blond-87.vercel.app" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 font-body text-sm text-[#F5F5F5]/75 transition hover:text-[#f2a93b] hover:underline">
+              <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="shrink-0">
+                <circle cx="12" cy="12" r="9" />
+                <path d="M3 12h18M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18" />
+              </svg>
+              Portfolio
             </a>
             <a href="https://www.linkedin.com/in/priyanshu-suyal-5732b224a" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 font-body text-sm text-[#F5F5F5]/75 transition hover:text-[#f2a93b]">
               <ContactIcon><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6ZM2 9h4v12H2z" /><circle cx="4" cy="4" r="2" /></ContactIcon>
