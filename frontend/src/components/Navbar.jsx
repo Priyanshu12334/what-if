@@ -90,8 +90,8 @@ const Navbar = () => {
                 <Link to="/categories" className={navLinkClass('/categories')}>
                   Categories
                 </Link>
-                <Link to="/ask" className={navLinkClass('/ask')}>
-                  Ask
+                <Link to="/ask" className={`${navLinkClass('/ask')} [word-spacing:-0.3em] whitespace-nowrap`}>
+                  Ask AI
                 </Link>
                 <Link to="/history" className={navLinkClass('/history')}>
                   Recent
@@ -160,7 +160,7 @@ const Navbar = () => {
                 {[
                   ['/daily', 'Daily'],
                   ['/categories', 'Categories'],
-                  ['/ask', 'Ask'],
+                  ['/ask', 'Ask AI'],
                   ['/history', 'Recent'],
                   ['/contact', 'Contact']
                 ].map(([path, label]) => (
@@ -168,7 +168,7 @@ const Navbar = () => {
                     key={path}
                     to={path}
                     onClick={() => setMobileMenuOpen(false)}
-                    className={`${mobileNavLinkClass(path)} w-full max-w-sm`}
+                    className={`${mobileNavLinkClass(path)} w-full max-w-sm ${path === '/ask' ? '[word-spacing:-0.3em] whitespace-nowrap' : ''}`}
                   >
                     {label}
                   </Link>
