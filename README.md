@@ -282,6 +282,7 @@ All API routes are prefixed with `/api`. Protected routes require a `Authorizati
 
 **Priyanshu Suyal**
 
-- GitHub: [github.com/Priyanshu12334](https://github.com/Priyanshu12334)
-- LinkedIn: [linkedin.com/in/priyanshu-suyal-5732b224a](https://www.linkedin.com/in/priyanshu-suyal-5732b224a)
+- Portfolio: [Portfolio](https://portfolio-ten-blond-87.vercel.app)
+- GitHub: [GitHub](https://github.com/Priyanshu12334)
+- LinkedIn: [Linkedin](https://www.linkedin.com/in/priyanshu-suyal-5732b224a)
 
