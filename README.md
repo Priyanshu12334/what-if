@@ -284,3 +284,4 @@ All API routes are prefixed with `/api`. Protected routes require a `Authorizati
 
 - GitHub: [github.com/Priyanshu12334](https://github.com/Priyanshu12334)
 - LinkedIn: [linkedin.com/in/priyanshu-suyal-5732b224a](https://www.linkedin.com/in/priyanshu-suyal-5732b224a)
+
