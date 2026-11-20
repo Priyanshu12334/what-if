@@ -107,7 +107,7 @@ const Login = () => {
         New here?{' '}
         <Link
           to="/register"
-          className="text-[#f2a93b] hover:underline font-mono uppercase tracking-widest ml-1"
+          className="text-[#f2a93b] transition-colors duration-200 hover:text-[#FFB52E] no-underline font-mono uppercase tracking-widest ml-1"
         >
           Create an account
         </Link>

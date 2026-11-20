@@ -54,14 +54,14 @@ const Navbar = () => {
   };
 
   const navLinkClass = (path) =>
-    `font-mono text-xs uppercase tracking-widest border-b pb-1 transition ${
+    `font-mono ${['/daily', '/categories', '/ask'].includes(path) ? 'font-medium' : ''} text-xs uppercase tracking-widest border-b pb-1 transition ${
       pathname === path
         ? 'border-[#f2a93b] text-[#f2a93b]'
         : 'border-transparent text-[#A1A1AA] hover:text-[#F5F5F5]'
     }`;
 
   const mobileNavLinkClass = (path) =>
-    `font-mono text-sm uppercase tracking-widest py-4 text-center transition block ${
+    `font-mono ${['/daily', '/categories', '/ask'].includes(path) ? 'font-medium' : ''} text-sm uppercase tracking-widest py-4 text-center transition block ${
       pathname === path
         ? 'text-[#f2a93b]'
         : 'text-[#A1A1AA] hover:text-[#F5F5F5]'
