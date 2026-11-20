@@ -150,7 +150,7 @@ const Category = () => {
                     <span className="font-mono text-xs text-[#A1A1AA] pt-1 shrink-0">
                       {num}
                     </span>
-                    <h3 className="font-heading text-lg sm:text-xl font-bold text-[#F5F5F5] transition leading-snug">
+                    <h3 className="font-heading text-lg sm:text-xl font-medium text-[#F5F5F5] transition leading-snug">
                       {item.question}
                     </h3>
                   </div>
@@ -178,7 +178,7 @@ const Category = () => {
                 >
                   <div className="overflow-hidden">
                     <div className="px-5 pb-6 pt-4 sm:px-6 pl-14 sm:pl-16 border-t border-white/[0.08]">
-                      <p className="w-full max-w-none border-l-2 border-[#f2a93b] pl-5 font-body font-medium text-base sm:text-lg leading-relaxed text-[#f3dfb5] whitespace-pre-line">
+                      <p className="w-full max-w-none border-l-2 border-[#f2a93b] pl-5 font-body font-normal text-base sm:text-lg leading-relaxed text-[#f3dfb5] whitespace-pre-line">
                         {item.answer}
                       </p>
                     </div>

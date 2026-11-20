@@ -14,6 +14,7 @@ const Ask = () => {
   const historyCacheKey = `history:${user?.id || 'current'}`;
   const [searchParams] = useSearchParams();
   const inputRef = useRef(null);
+  const answerRef = useRef(null);
   const prefixRef = useRef(null);
   const [prefixWidth, setPrefixWidth] = useState(0);
   const autoSubmittedQuestion = useRef(null);
@@ -38,13 +39,21 @@ const Ask = () => {
     const el = inputRef.current;
     if (!el) return;
     const isLaptop = window.matchMedia('(min-width: 768px)').matches;
-    const minHeight = isLaptop ? 120 : 52;
-    const maxHeight = isLaptop ? 260 : 160;
+    const minHeight = isLaptop ? 120 : 88;
+    const maxHeight = isLaptop ? 260 : 180;
     el.style.height = 'auto';
     const nextHeight = Math.min(Math.max(el.scrollHeight, minHeight), maxHeight);
     el.style.height = `${nextHeight}px`;
     el.style.overflowY = el.scrollHeight > maxHeight ? 'auto' : 'hidden';
   }, [userText, prefixWidth]);
+
+  useEffect(() => {
+    const answer = answerRef.current;
+    if (loading || !result || !answer?.querySelector('span')) return;
+    const navbarHeight = document.querySelector('nav')?.getBoundingClientRect().height ?? 0;
+    const top = window.scrollY + answer.getBoundingClientRect().top - navbarHeight - 16;
+    window.scrollTo({ top: Math.max(top, 0), behavior: 'smooth' });
+  }, [loading, result]);
 
   useEffect(() => {
     const q = searchParams.get('q');
@@ -71,7 +80,7 @@ const Ask = () => {
     setLastQuestion(questionText);
     setUserText('');
     if (inputRef.current) {
-      inputRef.current.style.height = `${window.matchMedia('(min-width: 768px)').matches ? 120 : 52}px`;
+      inputRef.current.style.height = `${window.matchMedia('(min-width: 768px)').matches ? 120 : 88}px`;
       inputRef.current.style.overflowY = 'hidden';
       inputRef.current.focus();
     }
@@ -129,14 +138,14 @@ const Ask = () => {
       <form onSubmit={handleSubmit} className="mb-12">
         <div>
           <label className="block font-mono text-xs uppercase tracking-widest font-medium text-[#A1A1AA] mb-2">
-            YOUR QUESTION
+            YOUR SCENARIO
           </label>
           <div
             onClick={() => inputRef.current?.focus()}
             className="ask-input-gradient relative border border-white/20 bg-transparent focus-within:border-[#f2a93b] transition cursor-text"
           >
             <div className="pointer-events-none absolute left-4 top-3 flex items-baseline gap-2 md:left-5 md:top-4">
-              <span ref={prefixRef} className="select-none font-heading text-base font-bold leading-7 text-[#F5F5F5] whitespace-pre">What if</span>
+              <span ref={prefixRef} className="select-none font-heading text-base font-medium leading-7 text-[#ece8df]/90 whitespace-pre">What if</span>
               {!userText && <span className="text-sm leading-7 text-[#A1A1AA]/60 md:text-base">Write your scenario…</span>}
             </div>
             <textarea
@@ -148,7 +157,7 @@ const Ask = () => {
               onChange={(e) => setUserText(e.target.value)}
               onKeyDown={handleKeyDown}
               style={{ textIndent: prefixWidth ? `${prefixWidth}px` : undefined }}
-              className="w-full min-h-[52px] max-h-[160px] md:min-h-[120px] md:max-h-[260px] overflow-x-hidden bg-transparent text-[#F5F5F5] text-base md:text-lg focus:outline-none font-body resize-none leading-7 px-4 py-3 md:px-5 md:py-4 m-0 border-0 outline-none rounded-none break-words"
+              className="w-full min-h-[88px] max-h-[180px] md:min-h-[120px] md:max-h-[260px] overflow-x-hidden bg-transparent text-[#F5F5F5] text-base md:text-lg focus:outline-none font-body resize-none leading-7 px-4 py-3 md:px-5 md:py-4 m-0 border-0 outline-none rounded-none break-words"
             />
           </div>
           <div className="mt-3 text-right font-mono text-xs text-[#A1A1AA] tracking-widest">
@@ -165,7 +174,7 @@ const Ask = () => {
         <button
           type="submit"
           disabled={loading || !userText.trim() || !isValidated || remaining === 0}
-          className={`mt-6 bg-[#f2a93b] hover:bg-[#d9922b] text-[#000000] font-body text-xs uppercase tracking-widest font-semibold py-3.5 px-6 transition disabled:opacity-50 ${loading || !userText.trim() || !isValidated || remaining === 0 ? 'cursor-not-allowed' : 'cursor-pointer'}`}
+          className={`mt-0 md:mt-3 bg-[#f2a93b] hover:bg-[#d9922b] text-[#000000] font-body text-xs uppercase tracking-widest font-semibold py-3.5 px-6 transition disabled:opacity-50 ${loading || !userText.trim() || !isValidated || remaining === 0 ? 'cursor-not-allowed' : 'cursor-pointer'}`}
         >
           {loading ? 'Asking…' : remaining === 0 ? 'Daily limit reached' : 'Ask'}
         </button>
@@ -182,7 +191,7 @@ const Ask = () => {
           {loading ? (
             <Skeleton className="h-24 w-full" />
           ) : result && (
-            <div>
+            <div ref={answerRef}>
               <AiAnswerCards reply={result} />
             </div>
           )}

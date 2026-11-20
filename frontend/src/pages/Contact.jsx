@@ -1,7 +1,7 @@
 import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 
-const fieldClass = 'mt-2 w-full border border-white/20 bg-[#0A0A0A] px-4 py-3 font-body text-sm text-[#F5F5F5] outline-none transition focus:border-[#f2a93b]';
+const fieldClass = 'mt-1.5 w-full border border-white/20 bg-[#0A0A0A] px-4 font-body text-sm text-[#F5F5F5] outline-none transition focus:border-[#f2a93b]';
 
 const ContactIcon = ({ children }) => (
   <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" className="h-4 w-4 shrink-0">
@@ -50,26 +50,26 @@ const Contact = () => {
       </header>
 
       <div className="grid gap-8 lg:grid-cols-[minmax(0,1.5fr)_minmax(280px,0.8fr)] lg:gap-12">
-        <section className="border border-white/[0.08] bg-[#0D0D0D] p-3 sm:p-5">
-          <h2 className="mb-3 font-heading text-xl font-semibold text-[#F5F5F5]">Send us a message</h2>
-          <form ref={formRef} onSubmit={submitFeedback} className="space-y-3">
-            <div className="grid gap-3 sm:grid-cols-2">
+        <section className="border border-white/[0.08] bg-[#0D0D0D] p-5 md:p-6">
+          <h2 className="mb-4 font-heading text-xl font-semibold text-[#F5F5F5]">Send us a message</h2>
+          <form ref={formRef} onSubmit={submitFeedback} className="grid gap-4">
+            <div className="grid gap-4 sm:grid-cols-2">
               <label className="block font-mono text-[11px] uppercase tracking-widest text-[#A1A1AA]">
                 Name
-                <input className={fieldClass} type="text" name="from_name" autoComplete="name" required maxLength={100} />
+                <input className={`${fieldClass} h-11`} type="text" name="from_name" autoComplete="name" required maxLength={100} />
               </label>
               <label className="block font-mono text-[11px] uppercase tracking-widest text-[#A1A1AA]">
                 Email
-                <input className={fieldClass} type="email" name="reply_to" autoComplete="email" required maxLength={254} />
+                <input className={`${fieldClass} h-11`} type="email" name="reply_to" autoComplete="email" required maxLength={254} />
               </label>
             </div>
             <label className="block font-mono text-[11px] uppercase tracking-widest text-[#A1A1AA]">
               Subject
-              <input className={fieldClass} type="text" name="subject" required maxLength={150} />
+              <input className={`${fieldClass} h-11`} type="text" name="subject" required maxLength={150} />
             </label>
             <label className="block font-mono text-[11px] uppercase tracking-widest text-[#A1A1AA]">
               Feedback type
-              <select className={fieldClass} name="feedback_type" defaultValue="General Feedback" required>
+              <select className={`${fieldClass} h-11`} name="feedback_type" defaultValue="General Feedback" required>
                 <option>General Feedback</option>
                 <option>Suggestion</option>
                 <option>Bug Report</option>
@@ -77,13 +77,13 @@ const Contact = () => {
             </label>
             <label className="block font-mono text-[11px] uppercase tracking-widest text-[#A1A1AA]">
               Feedback / Message
-              <textarea className={`${fieldClass} min-h-36 resize-none`} name="message" required maxLength={5000} />
+              <textarea className={`${fieldClass} min-h-[100px] resize-none`} name="message" rows={4} required maxLength={5000} />
             </label>
-            <div className="flex flex-col items-start gap-3 pt-1 sm:flex-row sm:items-center sm:justify-between">
+            <div className="flex flex-col items-start gap-3 sm:flex-row sm:items-center sm:justify-between">
               <button
                 type="submit"
                 disabled={sending}
-                className="border border-white/[0.08] bg-[#f2a635] px-6 py-3 font-mono text-xs font-medium uppercase tracking-widest text-[#000000] transition hover:bg-[#e1a141] hover:black disabled:cursor-not-allowed disabled:opacity-60"
+                className="h-11 border border-white/[0.08] bg-[#f2a635] px-4 font-mono text-xs font-medium uppercase tracking-widest text-[#000000] transition hover:bg-[#e1a141] hover:black disabled:cursor-not-allowed disabled:opacity-60"
               >
                 {sending ? 'Sending…' : 'Send message'}
               </button>

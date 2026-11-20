@@ -98,7 +98,7 @@ const Home = () => {
             {user?.name?.trim() ? `Hi, ${user.name.trim()}` : 'Hi'}
           </span>
           {!loading && (
-            <span className="sm:hidden shrink-0 whitespace-nowrap border border-white/[0.08] px-2.5 py-1 font-mono text-[11px] uppercase tracking-widest">
+            <span className="shrink-0 whitespace-nowrap border border-white/[0.08] px-2.5 py-1 font-mono text-[11px] uppercase tracking-widest">
               <span className="text-[#A1A1AA]">STREAK</span>{' '}
               <span className="text-[#f2a93b]">{streak}</span>{' '}
               <span className="text-[#A1A1AA]">{streak === 1 ? 'DAY' : 'DAYS'}</span>
@@ -122,9 +122,6 @@ const Home = () => {
           <>
             <div className="flex items-center justify-between gap-4 mt-4 mb-4">
               <span className="font-mono text-xs uppercase tracking-widest text-[#f2a93b]">DAILY WHAT IF</span>
-              <span className="hidden sm:inline font-mono text-xs uppercase tracking-widest text-[#A1A1AA]">
-                STREAK: {streak} {streak === 1 ? 'DAY' : 'DAYS'}
-              </span>
             </div>
             <h1 className="font-heading page-title font-bold text-[#F5F5F5]">
               {poll?.question || 'No daily question available'}
@@ -187,7 +184,7 @@ const Home = () => {
           </div>
 
           {poll.explanation && (
-            <section className="border border-white/[0.08] p-5 sm:p-6">
+            <section className="mt-4 border border-white/[0.08] p-5 sm:mt-0 md:mt-4 sm:p-6">
               <h2 className="font-mono text-xs font-medium uppercase tracking-widest text-[#f2a93b]">
                 WHAT MIGHT HAPPEN
               </h2>

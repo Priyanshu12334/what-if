@@ -6,9 +6,24 @@ const generations = new Map();
 
 const dateKey = (date) => date.toISOString().slice(0, 10);
 
-const createCommunityVotes = () => {
-  const total = 200 + Math.floor(Math.random() * 351);
-  const weights = Array.from({ length: 4 }, () => Math.random() + 0.1);
+const createSeededRandom = (date) => {
+  let seed = 2166136261;
+  for (let index = 0; index < date.length; index += 1) {
+    seed = Math.imul(seed ^ date.charCodeAt(index), 16777619) >>> 0;
+  }
+  return () => {
+    seed = (seed + 0x6D2B79F5) >>> 0;
+    let value = seed;
+    value = Math.imul(value ^ (value >>> 15), value | 1);
+    value ^= value + Math.imul(value ^ (value >>> 7), value | 61);
+    return ((value ^ (value >>> 14)) >>> 0) / 4294967296;
+  };
+};
+
+const createCommunityVotes = (date) => {
+  const random = createSeededRandom(date);
+  const total = 55 + Math.floor(random() * 296);
+  const weights = Array.from({ length: 4 }, () => random() + 0.1);
   const weightTotal = weights.reduce((sum, weight) => sum + weight, 0);
   const counts = weights.map((weight) => Math.floor((weight / weightTotal) * total));
   const remainder = total - counts.reduce((sum, count) => sum + count, 0);
@@ -34,7 +49,7 @@ const getPercentages = (counts) => {
 
 const ensureCommunityVotes = async (question) => {
   if (question.communityVotes?.length === 4) return question;
-  const communityVotes = createCommunityVotes();
+  const communityVotes = createCommunityVotes(question.date);
   const updated = await Question.findOneAndUpdate(
     { _id: question._id, communityVotes: { $exists: false } },
     { $set: { communityVotes } },
